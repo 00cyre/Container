@@ -4,7 +4,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
-
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Collections.Generic;
@@ -26,7 +25,7 @@ namespace Container
         public MainAppPage()
         {
             InitializeComponent();
-            this.id = Convert.ToInt32(Database.selectSingleValue("id", "empresa", $"nome_empresa='{login}'"));
+            this.id = Convert.ToInt32(Database.selectSingleValue("id", "empresa", $"email='{login}'"));
             LblProprietario.Content = login;
             if (Convert.ToInt32(Database.selectSingleValue("empresa",$"nome_empresa = '{login}'")) > 500)
             {
@@ -284,7 +283,7 @@ namespace Container
                         sbr.Begin();
                         await Task.Delay(500);
                         DGridOrçamento.Columns[0].Visibility = Visibility.Collapsed;
-                        DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"empresa_id={this.id}");
+                        DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id={this.id}");
                         break;
                     }
                 default:
@@ -373,7 +372,17 @@ namespace Container
                 await Task.Delay(500);
                 if(orcabaState == 0)
                 {
-                    DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id={this.id}");
+                    string id = Database.selectSingleValue("orcamento_materiais", "where id > 0");
+                    if (Convert.ToInt32(id) > 0)
+                    {
+                        DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id={this.id}");
+
+                    }
+                    else
+                    {
+                        DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material");
+
+                    }
                 }
                 else
                 {
