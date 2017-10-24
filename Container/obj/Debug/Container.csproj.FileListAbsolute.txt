@@ -131,3 +131,23 @@ C:\Users\Huron\Source\Workspaces\Container\Container\Container\obj\Debug\Contain
 C:\Users\Huron\Source\Workspaces\Container\Container\Container\obj\Debug\Container.csproj.CoreCompileInputs.cache
 C:\Users\Huron\Source\Workspaces\Container\Container\Container\obj\Debug\Container.exe
 C:\Users\Huron\Source\Workspaces\Container\Container\Container\obj\Debug\Container.pdb
+C:\Users\Huron\Documents\GitHub\Container\Container\bin\Debug\Container.exe.config
+C:\Users\Huron\Documents\GitHub\Container\Container\bin\Debug\Container.exe
+C:\Users\Huron\Documents\GitHub\Container\Container\bin\Debug\Container.pdb
+C:\Users\Huron\Documents\GitHub\Container\Container\bin\Debug\MySql.Data.xml
+C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Container.csprojResolveAssemblyReference.cache
+C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Simple Styles.baml
+C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Window\MainAppPage.baml
+C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Window\MainAppPage.g.cs
+C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Window\MainWindow.g.cs
+C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\App.g.cs
+C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Container_MarkupCompile.cache
+C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Container_MarkupCompile.lref
+C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\App.baml
+C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Window\MainWindow.baml
+C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Container.g.resources
+C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Container.Properties.Resources.resources
+C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Container.csproj.GenerateResource.Cache
+C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Container.csproj.CoreCompileInputs.cache
+C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Container.exe
+C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Container.pdb

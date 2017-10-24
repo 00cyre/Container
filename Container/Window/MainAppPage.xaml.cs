@@ -25,6 +25,7 @@ namespace Container
         public MainAppPage()
         {
             InitializeComponent();
+
             LblProprietario.Content = login;
             if (Convert.ToInt32(Database.selectSingleValue("empresa",$"nome_empresa = '{login}'")) > 500)
             {
@@ -370,7 +371,16 @@ namespace Container
                 Storyboard sb = FindResource("IrPTodos") as Storyboard;
                 sb.Begin();
                 await Task.Delay(500);
-                DGridOrçamento.DataContext = Database.selectDataTable("materiais");
+                if(orcabaState == 0)
+                {
+                    DGridOrçamento.DataContext = Database.selectDataTable("materiais");
+                }
+                else
+                {
+                    DGridOrçamento.DataContext = Database.selectDataTable("funcionarios");
+
+                }
+
                 OrcTodosState = 0;
                 RectTrocaAba.IsHitTestVisible = true;
 
