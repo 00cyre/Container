@@ -21,7 +21,7 @@ namespace Container.Model.Helper
         {
             List<string> parametros = Regex.Split(condicao, "'(.*?)'").ToList();
             parametros = parametros.Where(x => parametros.IndexOf(x) % 2 == 1).ToList();
-            string sql = "SELECT " + valores + " FROM " + tabela + " WHERE " + remodelarCondicao(condicao, parametros);
+            string sql = "SELECT " + valores + " FROM " + tabela + " WHERE " + condicao;
             MySqlCommand query = new MySqlCommand(sql, Database.conexao);
             //montarListaDeParametros(condicao, parametros, query);
             return query;
