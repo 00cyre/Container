@@ -3,3 +3,8 @@
 *.cache
 Container/obj/Debug/Container.csproj.FileListAbsolute.txt
 .vs/Container/v15/.suo
+*.ide
+.vs/Container/v15/.suo
+.vs/Container/v15/sqlite3/storage.ide
+Container/bin/Debug/Container.exe
+Container/obj/Debug/Container_MarkupCompile.lref
