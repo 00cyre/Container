@@ -20,12 +20,13 @@ namespace Container
     public partial class MainAppPage
     {
         string login = MainWindow.nome;
+        int id { get; set; }
         int orcabaState = 0;
         int ExpanderCodeState = 0, OrcTodosState = 0; //depois temos que definir os codigos de stado
         public MainAppPage()
         {
             InitializeComponent();
-
+            this.id = Convert.ToInt32(Database.selectSingleValue("id", "empresa", $"nome_empresa='{login}'"));
             LblProprietario.Content = login;
             if (Convert.ToInt32(Database.selectSingleValue("empresa",$"nome_empresa = '{login}'")) > 500)
             {
@@ -373,17 +374,15 @@ namespace Container
                 await Task.Delay(500);
                 if(orcabaState == 0)
                 {
-                    DGridOrçamento.DataContext = Database.selectDataTable("materiais");
+                    DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades m.preco, m.imposto, o.total", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"empresa_id={this.id}");
                 }
                 else
                 {
-                    DGridOrçamento.DataContext = Database.selectDataTable("funcionarios");
+                    DGridOrçamento.DataContext = Database.selectDataTable("", "funcionarios", $"empresa_id={this.id}");
 
                 }
-
                 OrcTodosState = 0;
                 RectTrocaAba.IsHitTestVisible = true;
-
             }
         }
     }

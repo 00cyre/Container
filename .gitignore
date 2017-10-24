@@ -1,0 +1,5 @@
+
+*.lref
+*.cache
+Container/obj/Debug/Container.csproj.FileListAbsolute.txt
+.vs/Container/v15/.suo
