@@ -151,3 +151,22 @@ C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Container.csproj.G
 C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Container.csproj.CoreCompileInputs.cache
 C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Container.exe
 C:\Users\Huron\Documents\GitHub\Container\Container\obj\Debug\Container.pdb
+C:\Users\gabri\Desktop\container\p\Container\Container\bin\Debug\Container.exe.config
+C:\Users\gabri\Desktop\container\p\Container\Container\bin\Debug\Container.exe
+C:\Users\gabri\Desktop\container\p\Container\Container\bin\Debug\Container.pdb
+C:\Users\gabri\Desktop\container\p\Container\Container\bin\Debug\MySql.Data.xml
+C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Container.csprojResolveAssemblyReference.cache
+C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Simple Styles.baml
+C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Window\MainAppPage.baml
+C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Window\MainAppPage.g.cs
+C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Window\MainWindow.g.cs
+C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\App.g.cs
+C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Container_MarkupCompile.cache
+C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Container_MarkupCompile.lref
+C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\App.baml
+C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Window\MainWindow.baml
+C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Container.g.resources
+C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Container.Properties.Resources.resources
+C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Container.csproj.GenerateResource.Cache
+C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Container.exe
+C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Container.pdb
