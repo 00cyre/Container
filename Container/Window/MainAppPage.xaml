@@ -208,178 +208,9 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="RectTrocaAba">
-                <EasingDoubleKeyFrame KeyTime="0" Value="1">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1.216">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="RectTrocaAba">
-                <EasingDoubleKeyFrame KeyTime="0" Value="1">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="RectTrocaAba">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="26">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="RectTrocaAba">
-                <EasingColorKeyFrame KeyTime="0" Value="sc#1, 0.456411034, 0.456411034, 0.456411034">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.3" Value="White">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="White">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFB1B1B1">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-            </ColorAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle1">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="43">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle2">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="34.5">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle2">
-                <EasingColorKeyFrame KeyTime="0" Value="White"/>
-                <EasingColorKeyFrame KeyTime="0:0:0.3" Value="#FFB2B2B2">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FFB2B2B2">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="White"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle1">
-                <EasingColorKeyFrame KeyTime="0" Value="White"/>
-                <EasingColorKeyFrame KeyTime="0:0:0.3" Value="#FFB2B2B2">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FFB2B2B2">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="White"/>
-            </ColorAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Materiais">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="34.5">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle3">
                 <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0.25"/>
             </DoubleAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="Materiais">
-                <DiscreteObjectKeyFrame KeyTime="0" Value="Materiais"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:0.4" Value="Operarios"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="Operarios"/>
-            </ObjectAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="Materiais">
-                <EasingColorKeyFrame KeyTime="0" Value="#FFFF6C0C">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FFB2B2B2">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFFF6C0C">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-            </ColorAnimationUsingKeyFrames>
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="label_Copy3">
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.6" Value="Profissão"/>
                 <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="Profissão"/>
@@ -431,18 +262,6 @@
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.FontSize)" Storyboard.TargetName="label_Copy">
                 <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="24"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="24"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Titles">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="175.5">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="AbrirEditar">
@@ -562,208 +381,6 @@
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ExpandGrid">
                 <SplineDoubleKeyFrame KeyTime="0" Value="1226"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="RectTrocaAba">
-                <EasingDoubleKeyFrame KeyTime="0" Value="1">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1.216">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="RectTrocaAba">
-                <EasingDoubleKeyFrame KeyTime="0" Value="1">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="RectTrocaAba">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="26">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="RectTrocaAba">
-                <EasingColorKeyFrame KeyTime="0" Value="#FFB1B1B1">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="White">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="White">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="sc#1, 0.456411034, 0.456411034, 0.456411034">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-            </ColorAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle1">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="43">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle2">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="34.5">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle2">
-                <EasingColorKeyFrame KeyTime="0" Value="White">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FFB2B2B2">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFB2B2B2">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="White">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle1">
-                <EasingColorKeyFrame KeyTime="0" Value="White">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FFB2B2B2">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFB2B2B2">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="White">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-            </ColorAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Materiais">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="34.5">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="Materiais">
-                <DiscreteObjectKeyFrame KeyTime="0" Value="Operarios"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="Materiais"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="Materiais"/>
-            </ObjectAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="Materiais">
-                <EasingColorKeyFrame KeyTime="0" Value="#FFFF6C0C">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFB2B2B2">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFFF6C0C">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-            </ColorAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Titles">
-                <EasingDoubleKeyFrame KeyTime="0" Value="175.5">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="175.5">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="LblQtd">
                 <DiscreteObjectKeyFrame KeyTime="0" Value="Preço/Hora"/>
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="Preço/Hora"/>
@@ -810,11 +427,6 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
-            <Int32AnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.ZIndex)" Storyboard.TargetName="Titles">
-                <EasingInt32KeyFrame KeyTime="0" Value="0"/>
-                <EasingInt32KeyFrame KeyTime="0:0:0.5" Value="0"/>
-                <EasingInt32KeyFrame KeyTime="0:0:1" Value="0"/>
-            </Int32AnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="IrPOrcamentos">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="MainGrids">
@@ -1518,8 +1130,8 @@
                     </Rectangle.Effect>
                 </Rectangle>
                 <Label x:Name="label1" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="37" Width="1235" Foreground="White" FontSize="22" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Panel.ZIndex="10" Content="Registrar"/>
-                <Grid x:Name="GrdROrc" Margin="45,107,10,0" Background="#00000000">
-                    <DataGrid x:Name="DGridOrçamento" HorizontalAlignment="Left" Height="406" Margin="213,28,0,0" VerticalAlignment="Top" Width="929" ItemsSource="{Binding}"  RowBackground="White" AlternatingRowBackground="White" HorizontalGridLinesBrush="#FFE5E5E5" VerticalGridLinesBrush="#FFE5E5E5" Foreground="#FFE55F0C" BorderBrush="{x:Null}" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Background="#FF0E0E0F" HeadersVisibility="None" SelectionChanged="DGridOrçamento_SelectionChanged" MaxColumnWidth="106" MinColumnWidth="106" AutoGenerateColumns="true" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="GrdROrc" Margin="45,72,10,0" Background="#00000000">
+                    <DataGrid x:Name="DGridOrçamento" HorizontalAlignment="Left" Height="485" Margin="24,10,0,0" VerticalAlignment="Top" Width="1118"  RowBackground="White" AlternatingRowBackground="White" HorizontalGridLinesBrush="#FFE5E5E5" VerticalGridLinesBrush="#FFE5E5E5" Foreground="#FFE55F0C" BorderBrush="{x:Null}" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Background="#FF0E0E0F" HeadersVisibility="None" SelectionChanged="DGridOrçamento_SelectionChanged" MaxColumnWidth="106" MinColumnWidth="106" AutoGenerateColumns="true" RenderTransformOrigin="0.5,0.5">
                         <DataGrid.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -1528,8 +1140,50 @@
                                 <TranslateTransform/>
                             </TransformGroup>
                         </DataGrid.RenderTransform>
+                        <Label x:Name="LblNome" Content="Nome" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" Width="161" Height="45" HorizontalContentAlignment="Center" RenderTransformOrigin="0.5,0.5">
+                            <Label.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Label.RenderTransform>
+                        </Label>
+                        <Label x:Name="label_Copy3" Content="Marca" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" Height="45" HorizontalContentAlignment="Center" Width="160" RenderTransformOrigin="0.5,0.5">
+                            <Label.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Label.RenderTransform>
+                        </Label>
+                        <Label x:Name="LblQtd" Content="Quantidade" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" Height="45" HorizontalContentAlignment="Center" Width="162" RenderTransformOrigin="0.5,0.5">
+                            <Label.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Label.RenderTransform>
+                        </Label>
+                        <Label x:Name="label_Copy5" Content="Valor Unidade" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" Height="45" Width="160" HorizontalContentAlignment="Center"/>
+                        <Label x:Name="label_Copy6" Content="Imposto" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" Height="45" Width="159" HorizontalContentAlignment="Center"/>
+                        <Label x:Name="label_Copy" Content="Total" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" Height="45" Width="148" HorizontalContentAlignment="Center" RenderTransformOrigin="0.5,0.5">
+                            <Label.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Label.RenderTransform>
+                        </Label>
                     </DataGrid>
-                    <Grid x:Name="GridEnvOrc" Margin="24,434,37,46" Background="#FF262626" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1118" Height="45">
+                    <Grid x:Name="GridEnvOrc" Margin="23,500,38,15" Background="#FF262626" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1118" Height="45">
                         <Grid.Effect>
                             <DropShadowEffect BlurRadius="0" Direction="270" RenderingBias="Quality" ShadowDepth="2"/>
                         </Grid.Effect>
@@ -1572,118 +1226,7 @@
                         <Rectangle Fill="White" HorizontalAlignment="Left" Height="2" Margin="848,43,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="8" Panel.ZIndex="-1"/>
                         <Rectangle Fill="White" HorizontalAlignment="Left" Height="2" Margin="848,0,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="8" Panel.ZIndex="-1"/>
                     </Grid>
-                    <Grid x:Name="titleMainOrc" Height="50" Margin="19,-20,0,-30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1125" Panel.ZIndex="-7" Background="#FF262626" OpacityMask="White">
-                        <Grid.Effect>
-                            <DropShadowEffect Color="#FF111111" BlurRadius="0" Direction="270" RenderingBias="Quality" ShadowDepth="2"/>
-                        </Grid.Effect>
-                        <Grid x:Name="Titles" Margin="140,5,10,0" RenderTransformOrigin="0.5,0.5">
-                            <Grid.RenderTransform>
-                                <TransformGroup>
-                                    <ScaleTransform/>
-                                    <SkewTransform/>
-                                    <RotateTransform/>
-                                    <TranslateTransform/>
-                                </TransformGroup>
-                            </Grid.RenderTransform>
-                            <Label x:Name="LblNome" Content="Nome" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" Margin="10,0,0,0" Width="161" Height="45" HorizontalContentAlignment="Center" RenderTransformOrigin="0.5,0.5">
-                                <Label.RenderTransform>
-                                    <TransformGroup>
-                                        <ScaleTransform/>
-                                        <SkewTransform/>
-                                        <RotateTransform/>
-                                        <TranslateTransform/>
-                                    </TransformGroup>
-                                </Label.RenderTransform>
-                            </Label>
-                            <Label x:Name="label_Copy3" Content="Marca" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Margin="176,0,0,0" VerticalContentAlignment="Center" Height="45" HorizontalContentAlignment="Center" Width="160" RenderTransformOrigin="0.5,0.5">
-                                <Label.RenderTransform>
-                                    <TransformGroup>
-                                        <ScaleTransform/>
-                                        <SkewTransform/>
-                                        <RotateTransform/>
-                                        <TranslateTransform/>
-                                    </TransformGroup>
-                                </Label.RenderTransform>
-                            </Label>
-                            <Label x:Name="LblQtd" Content="Quantidade" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" Margin="340,0,0,0" Height="45" HorizontalContentAlignment="Center" Width="162" RenderTransformOrigin="0.5,0.5">
-                                <Label.RenderTransform>
-                                    <TransformGroup>
-                                        <ScaleTransform/>
-                                        <SkewTransform/>
-                                        <RotateTransform/>
-                                        <TranslateTransform/>
-                                    </TransformGroup>
-                                </Label.RenderTransform>
-                            </Label>
-                            <Label x:Name="label_Copy5" Content="Valor Unidade" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" Margin="506,0,0,0" Height="45" Width="160" HorizontalContentAlignment="Center"/>
-                            <Label x:Name="label_Copy6" Content="Imposto" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" Margin="672,0,0,0" Height="45" Width="159" HorizontalContentAlignment="Center"/>
-                            <Label x:Name="label_Copy" Content="Total" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" Margin="836,0,0,0" Height="45" Width="148" HorizontalContentAlignment="Center" RenderTransformOrigin="0.5,0.5">
-                                <Label.RenderTransform>
-                                    <TransformGroup>
-                                        <ScaleTransform/>
-                                        <SkewTransform/>
-                                        <RotateTransform/>
-                                        <TranslateTransform/>
-                                    </TransformGroup>
-                                </Label.RenderTransform>
-                            </Label>
-                        </Grid>
-                        <Grid Margin="2,0,1009,0" Background="#00000000">
-                            <Rectangle x:Name="rectangle2" HorizontalAlignment="Left" Height="50" RadiusX="4" VerticalAlignment="Top" Width="68" Fill="White" Panel.ZIndex="1" RenderTransformOrigin="0.5,0.5" Margin="1,0,0,0">
-                                <Rectangle.RenderTransform>
-                                    <TransformGroup>
-                                        <ScaleTransform/>
-                                        <SkewTransform/>
-                                        <RotateTransform/>
-                                        <TranslateTransform/>
-                                    </TransformGroup>
-                                </Rectangle.RenderTransform>
-                            </Rectangle>
-                            <Rectangle x:Name="rectangle1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="44" Fill="White" Panel.ZIndex="1" RenderTransformOrigin="0.5,0.5" Margin="47,0,0,0" StrokeThickness="3">
-                                <Rectangle.Effect>
-                                    <DropShadowEffect Color="Gray" BlurRadius="1" Direction="370" RenderingBias="Quality" ShadowDepth="1"/>
-                                </Rectangle.Effect>
-                                <Rectangle.RenderTransform>
-                                    <TransformGroup>
-                                        <ScaleTransform/>
-                                        <SkewTransform AngleX="30"/>
-                                        <RotateTransform/>
-                                        <TranslateTransform/>
-                                    </TransformGroup>
-                                </Rectangle.RenderTransform>
-                            </Rectangle>
-                            <Rectangle x:Name="RectTrocaAba" HorizontalAlignment="Left" Height="50" Margin="80,0,-31,0" RadiusY="4" RadiusX="4" StrokeThickness="0" VerticalAlignment="Top" Width="74" Fill="#FFB2B2B2" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="-9" MouseDown="rectangle_MouseDown_1">
-
-                                <Rectangle.RenderTransform>
-                                    <TransformGroup>
-                                        <ScaleTransform/>
-                                        <SkewTransform AngleX="30"/>
-                                        <RotateTransform/>
-                                        <TranslateTransform/>
-                                    </TransformGroup>
-                                </Rectangle.RenderTransform>
-                            </Rectangle>
-                            <Label x:Name="Materiais" Content="Materiais" HorizontalAlignment="Left" Margin="1,0,0,0" VerticalAlignment="Center" Panel.ZIndex="1" Background="{x:Null}" Foreground="#FFFF6C0C" Height="50" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Width="88" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.5,0.5">
-                                <Label.RenderTransform>
-                                    <TransformGroup>
-                                        <ScaleTransform/>
-                                        <SkewTransform/>
-                                        <RotateTransform/>
-                                        <TranslateTransform/>
-                                    </TransformGroup>
-                                </Label.RenderTransform>
-                            </Label>
-                        </Grid>
-                        <Rectangle HorizontalAlignment="Right" Height="4" StrokeThickness="4" VerticalAlignment="Top" Width="1134" Fill="#FF0E0E0F" Margin="0,-1,0,0"/>
-                    </Grid>
-                    <Rectangle HorizontalAlignment="Left" Height="13" Margin="20,489,0,0" RadiusY="4" RadiusX="4" Stroke="White" StrokeThickness="3" VerticalAlignment="Top" Width="1124" Panel.ZIndex="-7">
-                        <Rectangle.Effect>
-                            <DropShadowEffect Color="#FFB2B2B2" Direction="270" BlurRadius="0" ShadowDepth="2" RenderingBias="Quality"/>
-                        </Rectangle.Effect>
-
-                    </Rectangle>
-                    <Rectangle HorizontalAlignment="Left" Height="477" Margin="21,25,0,0" RadiusY="4" RadiusX="4" Stroke="White" StrokeThickness="3" VerticalAlignment="Top" Width="1124" Fill="#FF0E0E0F" Panel.ZIndex="-7"/>
-                    <Rectangle x:Name="rectangle3" HorizontalAlignment="Left" Height="523" Margin="20,-19,0,0" Stroke="White" StrokeThickness="3" VerticalAlignment="Top" Width="1126" RadiusX="4" RadiusY="4" Panel.ZIndex="-5" RenderTransformOrigin="0.5,0.5">
+                    <Rectangle x:Name="rectangle3" HorizontalAlignment="Left" Height="550" Margin="18,2,0,0" Stroke="White" StrokeThickness="3" VerticalAlignment="Top" Width="1127" RadiusX="4" RadiusY="4" Panel.ZIndex="-5" RenderTransformOrigin="0.5,0.5" Fill="#FF0E0E0F">
                         <Rectangle.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -1739,7 +1282,77 @@
                             </TransformGroup>
                         </Label.RenderTransform>
                     </Label>
+                    <Rectangle x:Name="RectAbaOrcT_Copy" HorizontalAlignment="Left" Height="35" Margin="85,28,0,0" RadiusY="1" RadiusX="1" StrokeThickness="3" VerticalAlignment="Top" Width="53" RenderTransformOrigin="0.5,0.5" Fill="#FFB24B09" Panel.ZIndex="-1" MouseDown="RectAbaOrcT_MouseDown">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="30"/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Rectangle HorizontalAlignment="Left" Height="36" Margin="0,28,0,0" RadiusY="1" RadiusX="1" StrokeThickness="3" VerticalAlignment="Top" Width="45" Fill="#FFFF6C0C"/>
+                    <Label x:Name="lblTodos_Copy" Content="Todos" Margin="7,28,74,8" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="20" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False">
+                        <Label.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Label.RenderTransform>
+                    </Label>
+                    <Label x:Name="lblOrcamentos_Copy" Content="Orçamentos" Margin="17,28,10,10" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="20" Panel.ZIndex="-1" Foreground="#FF666666" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False">
+                        <Label.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Label.RenderTransform>
+                    </Label>
+                    <Label x:Name="lblTodos_Copy1" Content="Todos" Margin="1066,28,-979,8" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="20" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False" Panel.ZIndex="5">
+                        <Label.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Label.RenderTransform>
+                    </Label>
+                    <Rectangle x:Name="RectTrocaAba" HorizontalAlignment="Left" Height="36" Margin="1020,28,-922,0" StrokeThickness="3" VerticalAlignment="Top" Width="51" Fill="#FF737373" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="-1" MouseDown="RectAbaOrcT_MouseDown">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-24"/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Rectangle HorizontalAlignment="Left" Height="36" Margin="1065,28,-955,0" StrokeThickness="3" VerticalAlignment="Top" Width="39" Fill="White" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="3">
+                        <Rectangle.Effect>
+                            <DropShadowEffect Direction="170" BlurRadius="1" ShadowDepth="1" RenderingBias="Quality"/>
+                        </Rectangle.Effect>
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-25"/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Rectangle HorizontalAlignment="Left" Height="36" Margin="1089,28,-979,0" StrokeThickness="3" VerticalAlignment="Top" Width="39" Fill="White" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="3"/>
                 </Grid>
+                <Rectangle HorizontalAlignment="Left" Height="5" Margin="1076,66,0,0" Stroke="White" StrokeThickness="3" VerticalAlignment="Top" Width="117" RadiusX="1" RadiusY="1" Fill="#00000000" Panel.ZIndex="10">
+                    <Rectangle.Effect>
+                        <DropShadowEffect Color="#FFB2B2B2" Direction="270" BlurRadius="0" ShadowDepth="1" RenderingBias="Quality"/>
+                    </Rectangle.Effect>
+                </Rectangle>
             </Grid>
             <Grid Grid.Column="1" HorizontalAlignment="Left" Height="621" Margin="10,10,0,0" VerticalAlignment="Top" Width="986" Background="#00000000" Grid.RowSpan="2">
                 <Grid HorizontalAlignment="Left" Height="112" Margin="0,509,0,0" VerticalAlignment="Top" Width="328" Background="#FF18181A">
