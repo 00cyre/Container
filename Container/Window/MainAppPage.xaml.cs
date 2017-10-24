@@ -284,7 +284,7 @@ namespace Container
                         sbr.Begin();
                         await Task.Delay(500);
                         DGridOrçamento.Columns[0].Visibility = Visibility.Collapsed;
-                        DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades m.preco, m.imposto, o.total", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"empresa_id={this.id}");
+                        DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"empresa_id={this.id}");
                         break;
                     }
                 default:
@@ -373,7 +373,7 @@ namespace Container
                 await Task.Delay(500);
                 if(orcabaState == 0)
                 {
-                    DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades m.preco, m.imposto, o.total", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"empresa_id={this.id}");
+                    DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id={this.id}");
                 }
                 else
                 {
