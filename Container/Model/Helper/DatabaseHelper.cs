@@ -23,7 +23,7 @@ namespace Container.Model.Helper
             parametros = parametros.Where(x => parametros.IndexOf(x) % 2 == 1).ToList();
             string sql = "SELECT " + valores + " FROM " + tabela + " WHERE " + remodelarCondicao(condicao, parametros);
             MySqlCommand query = new MySqlCommand(sql, Database.conexao);
-            montarListaDeParametros(condicao, parametros, query);
+            //montarListaDeParametros(condicao, parametros, query);
             return query;
         }
 
