@@ -284,8 +284,7 @@ namespace Container
                         sbr.Begin();
                         await Task.Delay(500);
                         DGridOrçamento.Columns[0].Visibility = Visibility.Collapsed;
-                        DGridOrçamento.DataContext = Database.selectDataTable("materiais");
-
+                        DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades m.preco, m.imposto, o.total", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"empresa_id={this.id}");
                         break;
                     }
                 default:
@@ -378,7 +377,7 @@ namespace Container
                 }
                 else
                 {
-                    DGridOrçamento.DataContext = Database.selectDataTable("", "funcionarios", $"empresa_id={this.id}");
+                    DGridOrçamento.DataContext = Database.selectDataTable("", "funcionarios ", $"empresa_id={this.id}");
 
                 }
                 OrcTodosState = 0;
