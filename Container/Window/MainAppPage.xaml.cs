@@ -19,13 +19,13 @@ namespace Container
     public partial class MainAppPage
     {
         string login = MainWindow.nome;
-        int id { get; set; }
+        string id { get; set; }
         int orcabaState = 0;
         int ExpanderCodeState = 0, OrcTodosState = 0; //depois temos que definir os codigos de stado
         public MainAppPage()
         {
             InitializeComponent();
-            this.id = Convert.ToInt32(Database.selectSingleValue("id", "empresa", $"email='{login}'"));
+            id = "666";
             LblProprietario.Content = login;
             if (Convert.ToInt32(Database.selectSingleValue("empresa",$"nome_empresa = '{login}'")) > 500)
             {
@@ -35,7 +35,13 @@ namespace Container
             {
                 LblTdeconta.Content = "Normal";
             }
-            DGridOrçamento.DataContext = Database.selectDataTable("materiais");
+
+            List<string> list = new List<string>();
+            list.Add(Database.selectSingleValue("nome","funcionarios",$"where empresa_id = '666'"));
+            list.Add(Database.selectSingleValue("especialidade","funcionarios", $"where empresa_id = '666'" ));
+            DGridOrçamento.ItemsSource = list;
+
+
         }
 
         private void GridHead_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

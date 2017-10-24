@@ -1131,7 +1131,10 @@
                 </Rectangle>
                 <Label x:Name="label1" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="37" Width="1235" Foreground="White" FontSize="22" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Panel.ZIndex="10" Content="Registrar"/>
                 <Grid x:Name="GrdROrc" Margin="45,72,10,0" Background="#00000000">
-                    <DataGrid x:Name="DGridOrçamento" HorizontalAlignment="Left" Height="485" Margin="24,10,0,0" VerticalAlignment="Top" Width="1118"  RowBackground="White" AlternatingRowBackground="White" HorizontalGridLinesBrush="#FFE5E5E5" VerticalGridLinesBrush="#FFE5E5E5" Foreground="#FFE55F0C" BorderBrush="{x:Null}" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Background="#FF0E0E0F" HeadersVisibility="None" SelectionChanged="DGridOrçamento_SelectionChanged" MaxColumnWidth="106" MinColumnWidth="106" AutoGenerateColumns="true" RenderTransformOrigin="0.5,0.5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="DGridOrçamento" HorizontalAlignment="Left" Height="430" Margin="24,65,0,0" VerticalAlignment="Top" Width="1118"  RowBackground="White" AlternatingRowBackground="White" HorizontalGridLinesBrush="#FFE5E5E5" VerticalGridLinesBrush="#FFE5E5E5" Foreground="#FFE55F0C" BorderBrush="{x:Null}" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Background="#FF0E0E0F" HeadersVisibility="None" SelectionChanged="DGridOrçamento_SelectionChanged" MaxColumnWidth="225" MinColumnWidth="225" AutoGenerateColumns="true" RenderTransformOrigin="0.5,0.5">
                         <DataGrid.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -1140,48 +1143,7 @@
                                 <TranslateTransform/>
                             </TransformGroup>
                         </DataGrid.RenderTransform>
-                        <Label x:Name="LblNome" Content="Nome" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" Width="161" Height="45" HorizontalContentAlignment="Center" RenderTransformOrigin="0.5,0.5">
-                            <Label.RenderTransform>
-                                <TransformGroup>
-                                    <ScaleTransform/>
-                                    <SkewTransform/>
-                                    <RotateTransform/>
-                                    <TranslateTransform/>
-                                </TransformGroup>
-                            </Label.RenderTransform>
-                        </Label>
-                        <Label x:Name="label_Copy3" Content="Marca" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" Height="45" HorizontalContentAlignment="Center" Width="160" RenderTransformOrigin="0.5,0.5">
-                            <Label.RenderTransform>
-                                <TransformGroup>
-                                    <ScaleTransform/>
-                                    <SkewTransform/>
-                                    <RotateTransform/>
-                                    <TranslateTransform/>
-                                </TransformGroup>
-                            </Label.RenderTransform>
-                        </Label>
-                        <Label x:Name="LblQtd" Content="Quantidade" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" Height="45" HorizontalContentAlignment="Center" Width="162" RenderTransformOrigin="0.5,0.5">
-                            <Label.RenderTransform>
-                                <TransformGroup>
-                                    <ScaleTransform/>
-                                    <SkewTransform/>
-                                    <RotateTransform/>
-                                    <TranslateTransform/>
-                                </TransformGroup>
-                            </Label.RenderTransform>
-                        </Label>
-                        <Label x:Name="label_Copy5" Content="Valor Unidade" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" Height="45" Width="160" HorizontalContentAlignment="Center"/>
-                        <Label x:Name="label_Copy6" Content="Imposto" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" Height="45" Width="159" HorizontalContentAlignment="Center"/>
-                        <Label x:Name="label_Copy" Content="Total" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="24" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" VerticalContentAlignment="Center" Height="45" Width="148" HorizontalContentAlignment="Center" RenderTransformOrigin="0.5,0.5">
-                            <Label.RenderTransform>
-                                <TransformGroup>
-                                    <ScaleTransform/>
-                                    <SkewTransform/>
-                                    <RotateTransform/>
-                                    <TranslateTransform/>
-                                </TransformGroup>
-                            </Label.RenderTransform>
-                        </Label>
+
                     </DataGrid>
                     <Grid x:Name="GridEnvOrc" Margin="23,500,38,15" Background="#FF262626" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1118" Height="45">
                         <Grid.Effect>
@@ -1226,7 +1188,7 @@
                         <Rectangle Fill="White" HorizontalAlignment="Left" Height="2" Margin="848,43,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="8" Panel.ZIndex="-1"/>
                         <Rectangle Fill="White" HorizontalAlignment="Left" Height="2" Margin="848,0,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="8" Panel.ZIndex="-1"/>
                     </Grid>
-                    <Rectangle x:Name="rectangle3" HorizontalAlignment="Left" Height="550" Margin="18,2,0,0" Stroke="White" StrokeThickness="3" VerticalAlignment="Top" Width="1127" RadiusX="4" RadiusY="4" Panel.ZIndex="-5" RenderTransformOrigin="0.5,0.5" Fill="#FF0E0E0F">
+                    <Rectangle x:Name="rectangle3" HorizontalAlignment="Left" Height="550" Margin="20,2,0,0" Stroke="White" StrokeThickness="3" VerticalAlignment="Top" Width="1127" RadiusX="4" RadiusY="4" Panel.ZIndex="-5" RenderTransformOrigin="0.5,0.5" Fill="#FF0E0E0F">
                         <Rectangle.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -1236,6 +1198,14 @@
                             </TransformGroup>
                         </Rectangle.RenderTransform>
                     </Rectangle>
+                    <Grid x:Name="GridTitles" HorizontalAlignment="Left" Height="62" Margin="22,0,0,495" VerticalAlignment="Bottom" Width="1126" Background="#00000000">
+                        <Rectangle Fill="#FF151517" HorizontalAlignment="Left" Height="63" Margin="-1,-3,0,0" RadiusY="4" RadiusX="4" Stroke="White" StrokeThickness="3" VerticalAlignment="Top" Width="1126" Panel.ZIndex="-10" RenderTransformOrigin="0.5,0.5"/>
+                        <Label x:Name="LblNome" Content="Nome" HorizontalAlignment="Left" Margin="4,1,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="36" Height="53" Width="225"/>
+                        <Label x:Name="LblNome_Copy" Content="Profissão" HorizontalAlignment="Left" Margin="229,1,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="36" Height="53" Width="225"/>
+                        <Label x:Name="LblNome_Copy1" Content="Preço/Hora" HorizontalAlignment="Left" Margin="454,1,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="36" Height="53" Width="225"/>
+                        <Label x:Name="LblNome_Copy2" Content="Telefone" HorizontalAlignment="Left" Margin="679,1,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="36" Height="53" Width="225"/>
+                        <Label x:Name="LblNome_Copy3" Content="Cidade" HorizontalAlignment="Left" Margin="904,1,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="36" Height="53" Width="221"/>
+                    </Grid>
                 </Grid>
                 <Grid HorizontalAlignment="Left" Height="72" VerticalAlignment="Top" Width="149" Background="#00000000" Margin="65,5,0,0">
                     <Rectangle x:Name="rectangle5" HorizontalAlignment="Left" Height="36" Margin="14,28,0,0" RadiusY="1" RadiusX="1" StrokeThickness="3" VerticalAlignment="Top" Width="72" RenderTransformOrigin="0.5,0.5" Fill="#FFFF6C0C">
@@ -1313,7 +1283,7 @@
                             </TransformGroup>
                         </Label.RenderTransform>
                     </Label>
-                    <Label x:Name="lblTodos_Copy1" Content="Todos" Margin="1066,28,-979,8" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="20" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False" Panel.ZIndex="5">
+                    <Label x:Name="lblTodos_Copy1" Content="Funcionarios" Margin="1008,28,-979,8" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="20" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False" Panel.ZIndex="5">
                         <Label.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -1323,7 +1293,7 @@
                             </TransformGroup>
                         </Label.RenderTransform>
                     </Label>
-                    <Rectangle x:Name="RectTrocaAba" HorizontalAlignment="Left" Height="36" Margin="1020,28,-922,0" StrokeThickness="3" VerticalAlignment="Top" Width="51" Fill="#FF737373" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="-1" MouseDown="RectAbaOrcT_MouseDown">
+                    <Rectangle x:Name="RectTrocaAba" HorizontalAlignment="Left" Height="36" Margin="952,28,-854,0" StrokeThickness="3" VerticalAlignment="Top" Width="51" Fill="#FF737373" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="-1" MouseDown="RectAbaOrcT_MouseDown">
                         <Rectangle.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -1333,7 +1303,7 @@
                             </TransformGroup>
                         </Rectangle.RenderTransform>
                     </Rectangle>
-                    <Rectangle HorizontalAlignment="Left" Height="36" Margin="1065,28,-955,0" StrokeThickness="3" VerticalAlignment="Top" Width="39" Fill="White" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="3">
+                    <Rectangle HorizontalAlignment="Left" Height="36" Margin="1003,28,-955,0" StrokeThickness="3" VerticalAlignment="Top" Width="101" Fill="White" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="3">
                         <Rectangle.Effect>
                             <DropShadowEffect Direction="170" BlurRadius="1" ShadowDepth="1" RenderingBias="Quality"/>
                         </Rectangle.Effect>
@@ -1348,7 +1318,7 @@
                     </Rectangle>
                     <Rectangle HorizontalAlignment="Left" Height="36" Margin="1089,28,-979,0" StrokeThickness="3" VerticalAlignment="Top" Width="39" Fill="White" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="3"/>
                 </Grid>
-                <Rectangle HorizontalAlignment="Left" Height="5" Margin="1076,66,0,0" Stroke="White" StrokeThickness="3" VerticalAlignment="Top" Width="117" RadiusX="1" RadiusY="1" Fill="#00000000" Panel.ZIndex="10">
+                <Rectangle HorizontalAlignment="Left" Height="5" Margin="1008,66,0,0" Stroke="White" StrokeThickness="3" VerticalAlignment="Top" Width="185" RadiusX="1" RadiusY="1" Fill="#00000000" Panel.ZIndex="10">
                     <Rectangle.Effect>
                         <DropShadowEffect Color="#FFB2B2B2" Direction="270" BlurRadius="0" ShadowDepth="1" RenderingBias="Quality"/>
                     </Rectangle.Effect>
