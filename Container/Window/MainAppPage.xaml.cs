@@ -37,8 +37,8 @@ namespace Container
             }
 
             List<string> list = new List<string>();
-            list.Add(Database.selectSingleValue("nome","funcionarios",$"where empresa_id = '666'"));
-            list.Add(Database.selectSingleValue("especialidade","funcionarios", $"where empresa_id = '666'" ));
+            list.Add(Database.selectSingleValue("nome","funcionarios"," empresa_id = '666'"));
+            list.Add(Database.selectSingleValue("especialidade","funcionarios","empresa_id = '666'" ));
             DGridOrçamento.ItemsSource = list;
 
 
