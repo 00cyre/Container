@@ -55,7 +55,7 @@ namespace Container
             {
                 while (read.Read())
                 {
-                    valueList.Add(new KeyValuePair<string, int>((string)read["nome_orcamento"], (int)read["total"]));
+                    valueList.Add(new KeyValuePair<string, int>(Convert.ToString(read["nome_orcamento"]), Convert.ToInt32(read["total"])));
                 }
             }
             Database.conexao.Close();
@@ -68,11 +68,11 @@ namespace Container
             {
                 while (read.Read())
                 {
-                    valueList.Add(new KeyValuePair<string, int>((string)read["nome"], (int)read["preco_hora"]));
+                    valueList2.Add(new KeyValuePair<string, int>(Convert.ToString(read["nome"]), Convert.ToInt32(read["preco_hora"])));
                 }
             }
             Database.conexao.Close();
-            pieChart2.DataContext = valueList;
+            pieChart2.DataContext = valueList2;
 
             List<KeyValuePair<string, int>> valueList3 = new List<KeyValuePair<string, int>>();
             Database.conexao.Open();
@@ -81,11 +81,11 @@ namespace Container
             {
                 while (read.Read())
                 {
-                    valueList.Add(new KeyValuePair<string, int>((string)read["nome_produto"], (int)read["preco"]));
+                    valueList3.Add(new KeyValuePair<string, int>(Convert.ToString(read["nome_produto"]), Convert.ToInt32(read["preco"])));
                 }
             }
             Database.conexao.Close();
-            pieChart3.DataContext = valueList;
+            pieChart3.DataContext = valueList3;
         }
 
         private void GridHead_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

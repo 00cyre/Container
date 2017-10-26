@@ -1231,7 +1231,7 @@
                         </Rectangle.RenderTransform>
                     </Rectangle>
                 </Grid>
-                <chartingToolkit:Chart  Name="pieChart1" Title="Testano" 
+                <chartingToolkit:Chart  Name="pieChart1" Title="Orçamentos mais caros" 
 		            VerticalAlignment="Top" Margin="43,65,658,0" Height="280">
                     <chartingToolkit:PieSeries DependentValuePath="Value" 
 
@@ -1239,7 +1239,7 @@
 
 		            IsSelectionEnabled="True" />
                 </chartingToolkit:Chart>
-                <chartingToolkit:Chart  x:Name="pieChart2" Title="Testano" 
+                <chartingToolkit:Chart  x:Name="pieChart2" Title="Funcionarios mais caros" 
                     VerticalAlignment="Top" Margin="328,65,373,0" Height="280">
                     <chartingToolkit:PieSeries DependentValuePath="Value" 
 
@@ -1247,7 +1247,7 @@
 
                         IsSelectionEnabled="True" />
                 </chartingToolkit:Chart>
-                <chartingToolkit:Chart  x:Name="pieChart3" Title="Testano" 
+                <chartingToolkit:Chart  x:Name="pieChart3" Title="Materiais mais caros" 
                     VerticalAlignment="Top" Margin="658,65,43,0" Height="280">
                     <chartingToolkit:PieSeries DependentValuePath="Value" 
 
