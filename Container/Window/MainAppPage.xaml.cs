@@ -308,6 +308,7 @@ namespace Container
 
         private async void rectangle_MouseDown_1(object sender, MouseButtonEventArgs e)
         {
+
             switch (orcabaState)
             {
                 case 0:
@@ -404,6 +405,37 @@ namespace Container
             Color color = (Color)ColorConverter.ConvertFromString("#0CFFFFFF");
             RectOrçamento.Fill = new SolidColorBrush(color);
         }
+
+        private async void rectangle_MouseDown_2(object sender, MouseButtonEventArgs e)
+        {
+            if (orcabaState == 1)
+            {
+                orcabaState = 0;
+                //mudar conteudo datagrid para materiais
+
+                Storyboard sbr = FindResource("AbazinhaOrcr") as Storyboard;
+                sbr.Begin();
+                await Task.Delay(500);
+                DGridOrçamento.Columns[0].Visibility = Visibility.Collapsed;
+                DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id={this.id}");
+
+            }
+            else
+            {
+                orcabaState = 1;
+                //mudar conteudo da datagrid para os operarios
+
+                Storyboard sbr = FindResource("AbazinhaOrc") as Storyboard;
+                sbr.Begin();
+                await Task.Delay(500);
+                DGridOrçamento.Columns[0].Visibility = Visibility.Collapsed;
+
+                DGridOrçamento.DataContext = Database.selectDataTable("funcionarios");
+
+            }
+
+        }
+
         private async void RectAbaOrcT_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (OrcTodosState == 0)
