@@ -8,7 +8,9 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Collections.Generic;
 using System.Windows.Controls.DataVisualization.Charting;
+using MySql.Data.MySqlClient;
 using System.Threading.Tasks;
+
 
 namespace Container
 {
@@ -41,7 +43,49 @@ namespace Container
             list.Add(Database.selectSingleValue("especialidade","funcionarios","empresa_id = '666'" ));
             DGridOrçamento.ItemsSource = list;
 
+            criarGrafico();
+        }
 
+        private void criarGrafico()
+        {
+            List<KeyValuePair<string, int>> valueList = new List<KeyValuePair<string, int>>();
+            Database.conexao.Open();
+            MySqlCommand cmd = new MySqlCommand("SELECT * FROM orcamento ORDER BY total LIMIT 6", Database.conexao);
+            using (var read = cmd.ExecuteReader())
+            {
+                while (read.Read())
+                {
+                    valueList.Add(new KeyValuePair<string, int>((string)read["nome_orcamento"], (int)read["total"]));
+                }
+            }
+            Database.conexao.Close();
+            pieChart1.DataContext = valueList;
+
+            List<KeyValuePair<string, int>> valueList2 = new List<KeyValuePair<string, int>>();
+            Database.conexao.Open();
+            cmd = new MySqlCommand("SELECT * FROM funcionarios ORDER BY preco_hora LIMIT 6", Database.conexao);
+            using (var read = cmd.ExecuteReader())
+            {
+                while (read.Read())
+                {
+                    valueList.Add(new KeyValuePair<string, int>((string)read["nome"], (int)read["preco_hora"]));
+                }
+            }
+            Database.conexao.Close();
+            pieChart2.DataContext = valueList;
+
+            List<KeyValuePair<string, int>> valueList3 = new List<KeyValuePair<string, int>>();
+            Database.conexao.Open();
+            cmd = new MySqlCommand("SELECT * FROM materiais ORDER BY preco LIMIT 6", Database.conexao);
+            using (var read = cmd.ExecuteReader())
+            {
+                while (read.Read())
+                {
+                    valueList.Add(new KeyValuePair<string, int>((string)read["nome_produto"], (int)read["preco"]));
+                }
+            }
+            Database.conexao.Close();
+            pieChart3.DataContext = valueList;
         }
 
         private void GridHead_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
