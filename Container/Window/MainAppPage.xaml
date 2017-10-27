@@ -328,17 +328,17 @@
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="RectTrocaAba">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+                <EasingDoubleKeyFrame KeyTime="0" Value="20.594">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-52.5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-31.982">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="99.973">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="86.235">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -417,12 +417,13 @@
                 </EasingInt32KeyFrame>
             </Int32AnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="RectTrocaAba">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.808"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1.805">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.616">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="2.155">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -481,15 +482,209 @@
                 </EasingColorKeyFrame>
             </ColorAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="rectangle4">
-                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1.285"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.008"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1.285">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.008">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle4">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-26.333"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.708"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-26.333">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.708">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="lblTodos_Copy1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-50.667">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="51.999">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="lblTodos_Copy1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.666">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="lblTodos_Copy">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-56.695">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="lblTodos_Copy">
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FF6D6D6D">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="White">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="lblTodos_Copy1">
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="White">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF737373">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <Int32AnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.ZIndex)" Storyboard.TargetName="lblTodos_Copy1">
+                <EasingInt32KeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingInt32KeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingInt32KeyFrame.EasingFunction>
+                </EasingInt32KeyFrame>
+                <EasingInt32KeyFrame KeyTime="0:0:1" Value="3">
+                    <EasingInt32KeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingInt32KeyFrame.EasingFunction>
+                </EasingInt32KeyFrame>
+            </Int32AnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tatsar_Copy">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle6">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tatsar_Copy1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle7">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tatsar_Copy2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle8">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle9">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.HorizontalContentAlignment)" Storyboard.TargetName="TxtRegistrarOrc">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static HorizontalAlignment.Center}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static HorizontalAlignment.Center}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="TxtRegistrarOrc">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tatsar">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="LblNome_Copy">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="LblNome_Copy2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="LblNome_Copy3">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="Cidade"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="Preço/H"/>
+            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="AbazinhaOrc">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="ImgExpand">
@@ -514,24 +709,24 @@
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="RectTrocaAba">
-                <EasingDoubleKeyFrame KeyTime="0" Value="34.5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="17.554">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-52.5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-22.084">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="83.725">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="83.727">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="rectangle">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0.851">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.157">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -549,7 +744,7 @@
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle">
-                <EasingDoubleKeyFrame KeyTime="0" Value="21">
+                <EasingDoubleKeyFrame KeyTime="0" Value="5.546">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -603,8 +798,8 @@
                 </EasingInt32KeyFrame>
             </Int32AnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="RectTrocaAba">
-                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.665"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="2.193">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -667,166 +862,78 @@
                     </EasingColorKeyFrame.EasingFunction>
                 </EasingColorKeyFrame>
             </ColorAnimationUsingKeyFrames>
-        </Storyboard>
-        <Storyboard x:Key="AbazinhaOrc_Copy1">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="ImgExpand">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="MainGrids">
-                <EasingDoubleKeyFrame KeyTime="0" Value="-1226">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ExpandGrid">
-                <EasingDoubleKeyFrame KeyTime="0" Value="1226">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="RectAbaOrcT">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="lblTodos_Copy1">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="49.5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="51.25">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="22.438">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-1.55">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="54.5">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="RectAbaOrcT">
-                <EasingDoubleKeyFrame KeyTime="0" Value="1">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="2.021">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="2.248">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle5">
-                <EasingColorKeyFrame KeyTime="0" Value="#FFFF6C0C">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#FFB24B09">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFB24B09">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFFF6C0C">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle2">
-                <EasingColorKeyFrame KeyTime="0" Value="#FFFF6C0C">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#FFB24B09">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFB24B09">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFFF6C0C">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="RectAbaOrcT">
-                <EasingColorKeyFrame KeyTime="0" Value="#FFB24B09"/>
-                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFFF6B0D"/>
-                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFB24B09"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="lblTodos">
-                <EasingColorKeyFrame KeyTime="0" Value="#FF6D6D6D">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#006D6D6D">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#006D6D6D">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF6D6D6D"/>
-            </ColorAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="rectangle5">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1.592"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1.579"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.385"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle5">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="21.308"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="20.859"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="13.878"/>
-            </DoubleAnimationUsingKeyFrames>
-            <Int32AnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.ZIndex)" Storyboard.TargetName="lblOrcamentos">
-                <EasingInt32KeyFrame KeyTime="0" Value="-1">
-                    <EasingInt32KeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingInt32KeyFrame.EasingFunction>
-                </EasingInt32KeyFrame>
-                <EasingInt32KeyFrame KeyTime="0:0:0.5" Value="0">
+            <Int32AnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.ZIndex)" Storyboard.TargetName="lblTodos_Copy1">
+                <EasingInt32KeyFrame KeyTime="0:0:1" Value="3">
                     <EasingInt32KeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingInt32KeyFrame.EasingFunction>
                 </EasingInt32KeyFrame>
             </Int32AnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="lblOrcamentos">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="lblTodos_Copy1">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF737373">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="lblTodos_Copy">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-3.5">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-105">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-28.4">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-57">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <Int32AnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.ZIndex)" Storyboard.TargetName="lblTodos_Copy">
+                <EasingInt32KeyFrame KeyTime="0:0:0.5" Value="4">
+                    <EasingInt32KeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingInt32KeyFrame.EasingFunction>
+                </EasingInt32KeyFrame>
+                <EasingInt32KeyFrame KeyTime="0:0:0.8" Value="-1">
+                    <EasingInt32KeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingInt32KeyFrame.EasingFunction>
+                </EasingInt32KeyFrame>
+                <EasingInt32KeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingInt32KeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingInt32KeyFrame.EasingFunction>
+                </EasingInt32KeyFrame>
+            </Int32AnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tatsar_Copy">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
@@ -836,59 +943,278 @@
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-16.983">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="lblOrcamentos">
-                <EasingColorKeyFrame KeyTime="0" Value="#FF666666">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#00666666">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
-                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FF666666">
-                    <EasingColorKeyFrame.EasingFunction>
-                        <CircleEase EasingMode="EaseInOut"/>
-                    </EasingColorKeyFrame.EasingFunction>
-                </EasingColorKeyFrame>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle6">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tatsar_Copy1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle7">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)" Storyboard.TargetName="tatsar_Copy2">
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="Transparent"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="Transparent"/>
             </ColorAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="lblTodos">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tatsar_Copy2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle8">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="TxtRegistrarOrc">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="90.243">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.985">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
-            <Int32AnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.ZIndex)" Storyboard.TargetName="lblTodos">
-                <EasingInt32KeyFrame KeyTime="0:0:0.2" Value="0"/>
-                <EasingInt32KeyFrame KeyTime="0:0:0.8" Value="0">
-                    <EasingInt32KeyFrame.EasingFunction>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tatsar">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
-                    </EasingInt32KeyFrame.EasingFunction>
-                </EasingInt32KeyFrame>
-                <EasingInt32KeyFrame KeyTime="0:0:1" Value="-1">
-                    <EasingInt32KeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
                         <CircleEase EasingMode="EaseInOut"/>
-                    </EasingInt32KeyFrame.EasingFunction>
-                </EasingInt32KeyFrame>
-            </Int32AnimationUsingKeyFrames>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.985">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle10">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.985">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle11">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.985">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle12">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle13">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle14">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle15">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="lblTodos_Copy">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.HorizontalContentAlignment)" Storyboard.TargetName="LblNome">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static HorizontalAlignment.Left}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="{x:Static HorizontalAlignment.Center}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="LblNome">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="LblNome_Copy">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="LblNome_Copy1">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="Preço/Hora"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="Marca"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.HorizontalContentAlignment)" Storyboard.TargetName="LblNome_Copy1">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static HorizontalAlignment.Left}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="{x:Static HorizontalAlignment.Center}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="LblNome_Copy1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="LblNome_Copy2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="LblNome_Copy3">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="Cidade"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="Preço/Uni"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.HorizontalContentAlignment)" Storyboard.TargetName="LblNome_Copy3">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static HorizontalAlignment.Left}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="{x:Static HorizontalAlignment.Center}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="LblNome_Copy3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="lblTodos_Copy">
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FF6D6D6D"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="White"/>
+            </ColorAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="IrPOrcamentos">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="ImgExpand">
@@ -1255,6 +1581,381 @@
                 </EasingColorKeyFrame>
             </ColorAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="AbazinhaOrc1st">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="ImgExpand">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="MainGrids">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-1226">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ExpandGrid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1226">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="RectTrocaAba">
+                <EasingDoubleKeyFrame KeyTime="0" Value="17.554">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-35.084">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="82.895">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="rectangle">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.076">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.982">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="1.116"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.65">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle">
+                <EasingDoubleKeyFrame KeyTime="0" Value="9.65">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.949">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-2.739"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-18.268">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="RectTrocaAba">
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FF737373">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="White">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle">
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="White">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF737373">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <Int32AnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.ZIndex)" Storyboard.TargetName="rectangle">
+                <EasingInt32KeyFrame KeyTime="0:0:0.5" Value="3">
+                    <EasingInt32KeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingInt32KeyFrame.EasingFunction>
+                </EasingInt32KeyFrame>
+                <EasingInt32KeyFrame KeyTime="0:0:1" Value="-13">
+                    <EasingInt32KeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingInt32KeyFrame.EasingFunction>
+                </EasingInt32KeyFrame>
+            </Int32AnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="RectTrocaAba">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.665"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1.683">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="2.286">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="rectangle1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.166"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="2.912"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="3.025">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="2.121">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-3.25"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-37.31"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-39.5">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-21.875">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="rectangle">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="1.019"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="rectangle">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0.417"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle1">
+                <EasingColorKeyFrame KeyTime="0" Value="White"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="White"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.7" Value="White">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="White">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="lblTodos_Copy1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-55">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="53">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <Int32AnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.ZIndex)" Storyboard.TargetName="lblTodos_Copy1">
+                <EasingInt32KeyFrame KeyTime="0" Value="0"/>
+                <EasingInt32KeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingInt32KeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingInt32KeyFrame.EasingFunction>
+                </EasingInt32KeyFrame>
+                <EasingInt32KeyFrame KeyTime="0:0:1" Value="3">
+                    <EasingInt32KeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingInt32KeyFrame.EasingFunction>
+                </EasingInt32KeyFrame>
+            </Int32AnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="lblTodos_Copy1">
+                <EasingColorKeyFrame KeyTime="0" Value="White"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="White">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF737373">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="lblTodos_Copy">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-57">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="lblTodos_Copy">
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FF6D6D6D">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="White">
+                    <EasingColorKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingColorKeyFrame.EasingFunction>
+                </EasingColorKeyFrame>
+            </ColorAnimationUsingKeyFrames>
+            <Int32AnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.ZIndex)" Storyboard.TargetName="lblTodos_Copy">
+                <EasingInt32KeyFrame KeyTime="0:0:0.5" Value="3">
+                    <EasingInt32KeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingInt32KeyFrame.EasingFunction>
+                </EasingInt32KeyFrame>
+                <EasingInt32KeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingInt32KeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingInt32KeyFrame.EasingFunction>
+                </EasingInt32KeyFrame>
+            </Int32AnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tatsar_Copy">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle6">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="LblNome_Copy">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="LblNome_Copy2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="LblNome_Copy1">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="Preço/Hora"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="Marca"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="LblNome_Copy3">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="Cidade"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="Preço/Uni"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.HorizontalContentAlignment)" Storyboard.TargetName="LblNome_Copy1">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static HorizontalAlignment.Left}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="{x:Static HorizontalAlignment.Center}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.HorizontalContentAlignment)" Storyboard.TargetName="LblNome_Copy3">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static HorizontalAlignment.Left}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="{x:Static HorizontalAlignment.Center}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.HorizontalContentAlignment)" Storyboard.TargetName="LblNome">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static HorizontalAlignment.Left}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="{x:Static HorizontalAlignment.Center}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="LblNome">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="LblNome_Copy1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="LblNome_Copy3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </Window.Resources>
 
     <Grid x:Name="MainGrid" RenderTransformOrigin="0.5,0.5">
@@ -1492,45 +2193,45 @@
                                 </Canvas>
                             </Grid>
                         </Grid>
-                        <TextBox x:Name="TxtRegistrarOrc" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="Nome do orcamento" VerticalAlignment="Top" Width="207" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Background="Transparent" BorderBrush="{x:Null}" SelectionBrush="#FFFF6C0C" SelectionOpacity="0.5" FontSize="22" Margin="854,4,0,0" VerticalContentAlignment="Center">
+                        <TextBox x:Name="TxtRegistrarOrc" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="Nome do Orcamento" VerticalAlignment="Top" Width="207" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Background="Transparent" BorderBrush="{x:Null}" SelectionBrush="#FFFF6C0C" SelectionOpacity="0.5" FontSize="22" Margin="854,4,0,0" VerticalContentAlignment="Center">
                             <TextBox.Effect>
                                 <DropShadowEffect Direction="270" BlurRadius="0" ShadowDepth="1" Color="#FFCCCCCC"/>
                             </TextBox.Effect>
                         </TextBox>
-                        <TextBox x:Name="tatsar" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="Área da obra" VerticalAlignment="Top" Width="142" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Background="Transparent" BorderBrush="{x:Null}" SelectionBrush="#FFFF6C0C" SelectionOpacity="0.5" FontSize="22" Margin="712,4,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                        <TextBox x:Name="tatsar" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="Area" VerticalAlignment="Top" Width="142" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Background="Transparent" BorderBrush="{x:Null}" SelectionBrush="#FFFF6C0C" SelectionOpacity="0.5" FontSize="22" Margin="712,4,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
                             <TextBox.Effect>
                                 <DropShadowEffect Direction="270" BlurRadius="0" ShadowDepth="1" Color="#FFCCCCCC"/>
                             </TextBox.Effect>
                         </TextBox>
-                        <Rectangle HorizontalAlignment="Left" Height="45" StrokeThickness="2" VerticalAlignment="Top" Width="251" Stroke="White" RadiusX="3" RadiusY="3" Panel.ZIndex="-4" Margin="852,0,0,0"/>
-                        <Rectangle HorizontalAlignment="Left" Height="45" RadiusY="3" RadiusX="3" Stroke="White" StrokeThickness="2" VerticalAlignment="Top" Width="212" Margin="852,0,0,0"/>
-                        <Rectangle HorizontalAlignment="Left" Height="45" Margin="1062,0,0,0" RadiusY="4" RadiusX="4" StrokeThickness="2" VerticalAlignment="Top" Width="41" Fill="#FF333333" Panel.ZIndex="-10"/>
-                        <Rectangle Fill="#FF262626" HorizontalAlignment="Left" Height="45" Margin="712,0,0,0" RadiusY="3" RadiusX="3" StrokeThickness="2" VerticalAlignment="Top" Width="142" Panel.ZIndex="-10" Stroke="White"/>
-                        <Rectangle Fill="White" HorizontalAlignment="Left" Height="2" Margin="848,43,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="8" Panel.ZIndex="-1"/>
-                        <Rectangle Fill="White" HorizontalAlignment="Left" Height="2" Margin="848,0,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="8" Panel.ZIndex="-1"/>
+                        <Rectangle x:Name="rectangle15" HorizontalAlignment="Left" Height="45" StrokeThickness="2" VerticalAlignment="Top" Width="251" Stroke="White" RadiusX="3" RadiusY="3" Panel.ZIndex="-4" Margin="852,0,0,0"/>
+                        <Rectangle x:Name="rectangle10" HorizontalAlignment="Left" Height="45" RadiusY="3" RadiusX="3" Stroke="White" StrokeThickness="2" VerticalAlignment="Top" Width="212" Margin="852,0,0,0"/>
+                        <Rectangle x:Name="rectangle12" HorizontalAlignment="Left" Height="45" Margin="1062,0,0,0" RadiusY="4" RadiusX="4" StrokeThickness="2" VerticalAlignment="Top" Width="41" Fill="#FF333333" Panel.ZIndex="-10"/>
+                        <Rectangle x:Name="rectangle11" Fill="#FF262626" HorizontalAlignment="Left" Height="45" Margin="712,0,0,0" RadiusY="3" RadiusX="3" StrokeThickness="2" VerticalAlignment="Top" Width="142" Panel.ZIndex="-10" Stroke="White"/>
+                        <Rectangle x:Name="rectangle13" Fill="White" HorizontalAlignment="Left" Height="2" Margin="848,43,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="8" Panel.ZIndex="-1"/>
+                        <Rectangle x:Name="rectangle14" Fill="White" HorizontalAlignment="Left" Height="2" Margin="848,0,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="8" Panel.ZIndex="-1"/>
                         <Grid HorizontalAlignment="Left" Height="45" Margin="242,0,0,0" VerticalAlignment="Top" Width="470">
                             <Grid.Background>
                                 <SolidColorBrush/>
                             </Grid.Background>
-                            <TextBox x:Name="tatsar_Copy" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="Área da obra" VerticalAlignment="Top" Width="142" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Background="Transparent" BorderBrush="{x:Null}" SelectionBrush="#FFFF6C0C" SelectionOpacity="0.5" FontSize="22" Margin="327,4,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Opacity="0">
+                            <TextBox x:Name="tatsar_Copy" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Width="142" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Background="Transparent" BorderBrush="{x:Null}" SelectionBrush="#FFFF6C0C" SelectionOpacity="0.5" FontSize="22" Margin="327,4,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Opacity="0">
                                 <TextBox.Effect>
                                     <DropShadowEffect Direction="270" BlurRadius="0" ShadowDepth="1" Color="#FFCCCCCC"/>
                                 </TextBox.Effect>
                             </TextBox>
-                            <Rectangle Fill="#FF262626" HorizontalAlignment="Left" Height="45" Margin="327,0,0,0" RadiusY="3" RadiusX="3" StrokeThickness="2" VerticalAlignment="Top" Width="142" Panel.ZIndex="-10" Stroke="White" Opacity="0"/>
-                            <TextBox x:Name="tatsar_Copy1" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="Área da obra" VerticalAlignment="Top" Width="142" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Background="Transparent" BorderBrush="{x:Null}" SelectionBrush="#FFFF6C0C" SelectionOpacity="0.5" FontSize="22" Margin="187,4,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Opacity="0">
+                            <Rectangle x:Name="rectangle6" Fill="#FF262626" HorizontalAlignment="Left" Height="45" Margin="327,0,0,0" RadiusY="3" RadiusX="3" StrokeThickness="2" VerticalAlignment="Top" Width="142" Panel.ZIndex="-10" Stroke="White" Opacity="0"/>
+                            <TextBox x:Name="tatsar_Copy1" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="Especialidade" VerticalAlignment="Top" Width="142" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Background="Transparent" BorderBrush="{x:Null}" SelectionBrush="#FFFF6C0C" SelectionOpacity="0.5" FontSize="22" Margin="187,4,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Opacity="0">
                                 <TextBox.Effect>
                                     <DropShadowEffect Direction="270" BlurRadius="0" ShadowDepth="1" Color="#FFCCCCCC"/>
                                 </TextBox.Effect>
                             </TextBox>
-                            <Rectangle Fill="#FF262626" HorizontalAlignment="Left" Height="45" Margin="187,0,0,0" RadiusY="3" RadiusX="3" StrokeThickness="2" VerticalAlignment="Top" Width="142" Panel.ZIndex="-10" Stroke="White" Opacity="0"/>
-                            <TextBox x:Name="tatsar_Copy2" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="Área da obra" VerticalAlignment="Top" Width="142" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Background="Transparent" BorderBrush="{x:Null}" SelectionBrush="#FFFF6C0C" SelectionOpacity="0.5" FontSize="22" Margin="46,4,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Opacity="0">
+                            <Rectangle x:Name="rectangle7" Fill="#FF262626" HorizontalAlignment="Left" Height="45" Margin="187,0,0,0" RadiusY="3" RadiusX="3" StrokeThickness="2" VerticalAlignment="Top" Width="142" Panel.ZIndex="-10" Stroke="White" Opacity="0"/>
+                            <TextBox x:Name="tatsar_Copy2" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Width="142" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Background="Transparent" BorderBrush="{x:Null}" SelectionBrush="#FFFF6C0C" SelectionOpacity="0.5" FontSize="22" Margin="46,4,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Opacity="0">
                                 <TextBox.Effect>
                                     <DropShadowEffect Direction="270" BlurRadius="0" ShadowDepth="1" Color="#FFCCCCCC"/>
                                 </TextBox.Effect>
                             </TextBox>
-                            <Rectangle Fill="#FF262626" HorizontalAlignment="Left" Height="45" RadiusY="3" RadiusX="3" StrokeThickness="2" VerticalAlignment="Top" Width="142" Panel.ZIndex="-10" Stroke="White" Margin="47,0,0,0" Opacity="0"/>
-                            <Rectangle HorizontalAlignment="Left" Height="45" Margin="46,0,0,0" RadiusY="3" RadiusX="3" Stroke="White" StrokeThickness="2" VerticalAlignment="Top" Width="424" Opacity="0"/>
+                            <Rectangle x:Name="rectangle8" Fill="#FF262626" HorizontalAlignment="Left" Height="45" RadiusY="3" RadiusX="3" StrokeThickness="2" VerticalAlignment="Top" Width="142" Panel.ZIndex="-10" Stroke="White" Margin="47,0,0,0" Opacity="0"/>
+                            <Rectangle x:Name="rectangle9" HorizontalAlignment="Left" Height="45" Margin="46,0,0,0" RadiusY="3" RadiusX="3" Stroke="White" StrokeThickness="2" VerticalAlignment="Top" Width="424" Opacity="0"/>
                         </Grid>
                     </Grid>
                     <Rectangle x:Name="rectangle3" HorizontalAlignment="Left" Height="550" Margin="20,2,0,0" Stroke="White" StrokeThickness="3" VerticalAlignment="Top" Width="1127" RadiusX="4" RadiusY="4" Panel.ZIndex="-5" RenderTransformOrigin="0.5,0.5" Fill="#FF0E0E0F">
@@ -1630,6 +2331,26 @@
                             </TransformGroup>
                         </Rectangle.RenderTransform>
                     </Rectangle>
+                    <Label x:Name="lblTodos_Copy" Content="Funcionarios" Margin="1008,28,-979,10" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="20" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False" Panel.ZIndex="3">
+                        <Label.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Label.RenderTransform>
+                    </Label>
+                    <Label x:Name="lblTodos_Copy1" Content="Materiais" Margin="954,28,-925,10" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="20" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False" Foreground="White">
+                        <Label.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Label.RenderTransform>
+                    </Label>
                 </Grid>
                 <Rectangle x:Name="rectangle4" HorizontalAlignment="Left" Height="5" Margin="1008,66,0,0" Stroke="White" StrokeThickness="3" VerticalAlignment="Top" Width="185" RadiusX="1" RadiusY="1" Fill="#00000000" Panel.ZIndex="10" RenderTransformOrigin="0.5,0.5">
                     <Rectangle.RenderTransform>

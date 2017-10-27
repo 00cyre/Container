@@ -23,8 +23,7 @@ namespace Container
         Dictionary<int, double> value;
         string login = MainWindow.nome;
         string id { get; set; }
-        int orcabaState = 0;
-        int ExpanderCodeState = 0, OrcTodosState = 0; //depois temos que definir os codigos de stado
+        int ExpanderCodeState = 0, OrcTodosState = 0, orcabaState = 0, countAbazinhal = 0; //depois temos que definir os codigos de stado
         public MainAppPage()
         {
             InitializeComponent();
@@ -276,42 +275,44 @@ namespace Container
 
         private async void rectangle_MouseDown_1(object sender, MouseButtonEventArgs e)
         {
-
-            switch (orcabaState)
+            if (countAbazinhal == 0)
             {
-                case 0:
-                    {
-                        orcabaState = 1;
-                        //mudar conteudo da datagrid para os operarios
-                       
-                        Storyboard sbr = FindResource("AbazinhaOrc") as Storyboard;
-                        sbr.Begin();
-                        await Task.Delay(500);
-                        DGridOrçamento.Columns[0].Visibility = Visibility.Collapsed;
-
-                        DGridOrçamento.DataContext = Database.selectDataTable("funcionarios");
-
-                        break;
-                    }
-                case 1:
-                    {
-                        orcabaState = 0;
-                        //mudar conteudo datagrid para materiais
-                        
-                        Storyboard sbr = FindResource("AbazinhaOrcr") as Storyboard;
-                        sbr.Begin();
-                        await Task.Delay(500);
-                        DGridOrçamento.Columns[0].Visibility = Visibility.Collapsed;
-                        DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
-                        break;
-                    }
-                default:
-                    {
-                        break;
-                    }
+                orcabaState = 0;
+                //mudar conteudo datagrid para materiais
+                countAbazinhal++;
+                Storyboard sbr = FindResource("AbazinhaOrc1st") as Storyboard;
+                sbr.Begin();
+                await Task.Delay(500);
+                tatsar.Text = "Marca";
+                TxtRegistrarOrc.Text = "Preço";
+                DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
+                countAbazinhal++;
             }
-        }
+            else
+            {
 
+                switch (orcabaState)
+                {
+                    case 1:
+                        {
+                            orcabaState = 0;
+                            //mudar conteudo datagrid para materiais
+
+                            Storyboard sbr = FindResource("AbazinhaOrcr") as Storyboard;
+                            sbr.Begin();
+                            await Task.Delay(500);
+                            tatsar_Copy.Text = "Nome";
+                            tatsar.Text = "Marca";
+                            TxtRegistrarOrc.Text = "Preço";
+                            DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
+                            break;
+                        }
+                }
+                countAbazinhal++;
+            }
+
+        }
+    
 
 
 
@@ -376,30 +377,58 @@ namespace Container
 
         private async void rectangle_MouseDown_2(object sender, MouseButtonEventArgs e)
         {
-            if (orcabaState == 1)
+            if (countAbazinhal == 0)
             {
-                orcabaState = 0;
+                orcabaState = 1;
                 //mudar conteudo datagrid para materiais
 
-                Storyboard sbr = FindResource("AbazinhaOrcr") as Storyboard;
+                Storyboard sbr = FindResource("AbazinhaOrc1st") as Storyboard;
                 sbr.Begin();
                 await Task.Delay(500);
-                DGridOrçamento.Columns[0].Visibility = Visibility.Collapsed;
-                DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id={this.id}");
-
+                tatsar.Text = "Marca";
+                TxtRegistrarOrc.Text = "Preço";
+                DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
+                countAbazinhal++;
             }
             else
             {
-                orcabaState = 1;
-                //mudar conteudo da datagrid para os operarios
 
-                Storyboard sbr = FindResource("AbazinhaOrc") as Storyboard;
-                sbr.Begin();
-                await Task.Delay(500);
-                DGridOrçamento.Columns[0].Visibility = Visibility.Collapsed;
+                switch (orcabaState)
+                {
+                    case 0:
+                        {
+                            orcabaState = 1;
+                            //mudar conteudo da datagrid para os operarios
 
-                DGridOrçamento.DataContext = Database.selectDataTable("funcionarios");
+                            Storyboard sbr = FindResource("AbazinhaOrc") as Storyboard;
+                            sbr.Begin();
+                            await Task.Delay(500);
+                            DGridOrçamento.Columns[0].Visibility = Visibility.Collapsed;
+                            tatsar_Copy2.Text = "Nome";
+                            tatsar_Copy.Text = "Preço/h";
+                            tatsar.Text = "Telefone";
+                            TxtRegistrarOrc.Text = "Cidade";
+                            DGridOrçamento.DataContext = Database.selectDataTable("funcionarios");
 
+                            break;
+                        }
+                    case 1:
+                        {
+                            orcabaState = 0;
+                            //mudar conteudo datagrid para materiais
+
+                            Storyboard sbr = FindResource("AbazinhaOrcr") as Storyboard;
+                            sbr.Begin();
+                            await Task.Delay(500);
+                            tatsar_Copy.Text = "Nome";
+                            tatsar.Text = "Marca";
+                            TxtRegistrarOrc.Text = "Preço";
+                            DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
+                            break;
+                        }
+
+                }
+                countAbazinhal++;
             }
 
         }
