@@ -7,7 +7,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Collections.Generic;
-using System.Windows.Controls.DataVisualization.Charting;
+using System.Windows.Forms.DataVisualization.Charting;
 using MySql.Data.MySqlClient;
 using System.Threading.Tasks;
 
@@ -20,6 +20,7 @@ namespace Container
     /// </summary>
     public partial class MainAppPage
     {
+        Dictionary<int, double> value;
         string login = MainWindow.nome;
         string id { get; set; }
         int orcabaState = 0;
@@ -27,6 +28,7 @@ namespace Container
         public MainAppPage()
         {
             InitializeComponent();
+            
             id = "666";
             LblProprietario.Content = login;
             if (Convert.ToInt32(Database.selectSingleValue("empresa",$"nome_empresa = '{login}'")) > 500)
@@ -43,50 +45,16 @@ namespace Container
             list.Add(Database.selectSingleValue("especialidade","funcionarios","empresa_id = '666'" ));
             DGridOrçamento.ItemsSource = list;
 
-            criarGrafico();
+            value = new Dictionary<int, double>();
+            for (int i = 0; i < 10; i++)
+                value.Add(i, 10 * i);
+
+            Chart chart = this.FindName("Graficoz1") as Chart;
+            chart.DataSource = value;
+            chart.Series["series"].XValueMember = "Key";
+            chart.Series["series"].YValueMembers = "Value";
         }
 
-        private void criarGrafico()
-        {
-            List<KeyValuePair<string, int>> valueList = new List<KeyValuePair<string, int>>();
-            Database.conexao.Open();
-            MySqlCommand cmd = new MySqlCommand("SELECT * FROM orcamento ORDER BY total LIMIT 6", Database.conexao);
-            using (var read = cmd.ExecuteReader())
-            {
-                while (read.Read())
-                {
-                    valueList.Add(new KeyValuePair<string, int>(Convert.ToString(read["nome_orcamento"]), Convert.ToInt32(read["total"])));
-                }
-            }
-            Database.conexao.Close();
-            pieChart1.DataContext = valueList;
-
-            List<KeyValuePair<string, int>> valueList2 = new List<KeyValuePair<string, int>>();
-            Database.conexao.Open();
-            cmd = new MySqlCommand("SELECT * FROM funcionarios ORDER BY preco_hora LIMIT 6", Database.conexao);
-            using (var read = cmd.ExecuteReader())
-            {
-                while (read.Read())
-                {
-                    valueList2.Add(new KeyValuePair<string, int>(Convert.ToString(read["nome"]), Convert.ToInt32(read["preco_hora"])));
-                }
-            }
-            Database.conexao.Close();
-            pieChart2.DataContext = valueList2;
-
-            List<KeyValuePair<string, int>> valueList3 = new List<KeyValuePair<string, int>>();
-            Database.conexao.Open();
-            cmd = new MySqlCommand("SELECT * FROM materiais ORDER BY preco LIMIT 6", Database.conexao);
-            using (var read = cmd.ExecuteReader())
-            {
-                while (read.Read())
-                {
-                    valueList3.Add(new KeyValuePair<string, int>(Convert.ToString(read["nome_produto"]), Convert.ToInt32(read["preco"])));
-                }
-            }
-            Database.conexao.Close();
-            pieChart3.DataContext = valueList3;
-        }
 
         private void GridHead_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -334,7 +302,7 @@ namespace Container
                         sbr.Begin();
                         await Task.Delay(500);
                         DGridOrçamento.Columns[0].Visibility = Visibility.Collapsed;
-                        DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id={this.id}");
+                        DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
                         break;
                     }
                 default:
@@ -454,21 +422,21 @@ namespace Container
                 await Task.Delay(500);
                 if(orcabaState == 0)
                 {
-                    string id = Database.selectSingleValue("orcamento_materiais", "where id > 0");
+                    string id = Database.selectSingleValue("orcamento_materiais", "id > 0");
                     if (Convert.ToInt32(id) > 0)
                     {
-                        DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id={this.id}");
+                       // DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
 
                     }
                     else
                     {
-                        DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material");
+                        //DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material");
 
                     }
                 }
                 else
                 {
-                    DGridOrçamento.DataContext = Database.selectDataTable("", "funcionarios ", $"empresa_id={this.id}");
+                    //DGridOrçamento.DataContext = Database.selectDataTable("", "funcionarios ", $"empresa_id={this.id}");
 
                 }
                 OrcTodosState = 0;
