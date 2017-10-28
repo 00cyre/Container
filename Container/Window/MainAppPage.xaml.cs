@@ -514,6 +514,28 @@ namespace Container
             DGridOrçamento.DataContext = data;
         }
 
+        private void inserir(grid Grid)
+        {
+            switch (Grid)
+            {
+                case grid.orcamento:
+                    Database.insert("orcamento", $"default, '{tatsar.Text}', '{TxtRegistrarOrc.Text}', {DateTime.Now.ToString("yyyy-MM-dd")}, null, null, null, null, {id}");
+                    break;
+                case grid.orcamento_func:
+                    Database.insert("orcamento_funcionarios", "");
+                    break;
+                case grid.orcamento_mat:
+                    Database.insert("orcamento_materiais", "");
+                    break;
+                case grid.material:
+                    Database.insert("materiais", $"default, '{tatsar_Copy.Text}', '{tatsar.Text}', null, '{TxtRegistrarOrc.Text}', null, {id}");
+                    break;
+                case grid.funcionario:
+                    Database.insert("funcionarios", "");
+                    break;
+            }
+        }
+
         enum grid
         {
             orcamento,
