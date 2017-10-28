@@ -58,38 +58,6 @@ namespace Container
             chart.Series["series"].YValueMembers = "Value";
         }
 
-        private void exibir(grid Grid)
-        {
-            DataTable data = null;
-            switch (Grid)
-            {
-                case grid.orcamento:
-                    data = Database.selectDataTable("nome_orcamento, area_construcao, data_orcamento", "orcamento", $"empresa_id='{this.id}'");
-                    break;
-                case grid.orcamento_func:
-                    data = Database.selectDataTable("f.nome, o.nome_orcamento, of.total_funcionarios, of.horas_trabalhadas", "orcamento_funcionarios of JOIN orcamento o ON of.orcamento_id = o.id JOIN funcionarios f ON f.id = of.funcionarios_id", $"f.empresa_id='{this.id}' && o.empresa_id='{this.id}'");
-                    break;
-                case grid.orcamento_mat:
-                    data = Database.selectDataTable("m.nome_produto, o.nome_orcamento, om.unidades, om.total_material", "orcamento_materiais om JOIN orcamento o ON om.orcamento_id = o.id JOIN materiais m ON m.id = om.materiais_id", $"m.empresa_id='{this.id}' && o.empresa_id='{this.id}'");
-                    break;
-                case grid.material:
-                    data = Database.selectDataTable("nome_produto, marca, preco", "materiais", $"empresa_id='{this.id}'");
-                    break;
-                case grid.funcionario:
-                    data = Database.selectDataTable("nome, especialidade, preco_hora, telefone1, cidade", "funcionarios", $"empresa_id='{this.id}'");
-                    break;
-            }
-            DGridOrçamento.DataContext = data;
-        }
-
-        enum grid
-        {
-            orcamento,
-            orcamento_func,
-            orcamento_mat,
-            material,
-            funcionario
-        } 
         private void GridHead_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             base.OnMouseLeftButtonDown(e);
@@ -285,6 +253,7 @@ namespace Container
             DateTime theDate = DateTime.Now;
             string id = Database.selectSingleValue("empresa","nome_empresa = '" + login.ToString() + "'");
             Database.insert("orcamento", "default," + "'"+ TxtRegistrarOrc.Text + "'," + "'" + tatsar.Text + "'," + "'" + theDate.ToString("yyyy-MM-dd H:mm:ss") +  "',NULL,NULL,NULL,NULL," + id);
+            exibir(grid.orcamento);
             //DGridOrçamento.DataContext = Database.selectDataTable("orcamento");
 
 
@@ -320,6 +289,7 @@ namespace Container
                 await Task.Delay(500);
                 tatsar.Text = "Marca";
                 TxtRegistrarOrc.Text = "Preço";
+                exibir(grid.material);
                 //DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
                 countAbazinhal++;
             }
@@ -339,6 +309,7 @@ namespace Container
                             tatsar_Copy.Text = "Nome";
                             tatsar.Text = "Marca";
                             TxtRegistrarOrc.Text = "Preço";
+                            exibir(grid.material);
                             //DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
                             break;
                         }
@@ -422,6 +393,7 @@ namespace Container
                 await Task.Delay(500);
                 tatsar.Text = "Marca";
                 TxtRegistrarOrc.Text = "Preço";
+                exibir(grid.material);
                 //DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
                 countAbazinhal++;
             }
@@ -443,10 +415,7 @@ namespace Container
                             tatsar_Copy.Text = "Preço/h";
                             tatsar.Text = "Telefone";
                             TxtRegistrarOrc.Text = "Cidade";
-<<<<<<< HEAD
- 
-=======
->>>>>>> d636c178401e910fec5aaeb04df7016c9e78744a
+                            exibir(grid.funcionario);
                             //DGridOrçamento.DataContext = Database.selectDataTable("funcionarios");
 
                             break;
@@ -462,11 +431,10 @@ namespace Container
                             tatsar_Copy.Text = "Nome";
                             tatsar.Text = "Marca";
                             TxtRegistrarOrc.Text = "Preço";
-<<<<<<< HEAD
+
                             exibir(grid.material);
-=======
+
                             //DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
->>>>>>> d636c178401e910fec5aaeb04df7016c9e78744a
                             break;
                         }
 
@@ -482,13 +450,13 @@ namespace Container
             {
                 Storyboard sb = FindResource("IrPOrcamentos") as Storyboard;
                 sb.Begin();
-                await Task.Delay(500);
-<<<<<<< HEAD
-                exibir(grid.orcamento);
-=======
-                //DGridOrçamento.DataContext = Database.selectDataTable("orcamento");
->>>>>>> d636c178401e910fec5aaeb04df7016c9e78744a
-                OrcTodosState = 1;
+ await Task.Delay(500);
+
+ exibir(grid.orcamento);
+
+ //DGridOrçamento.DataContext = Database.selectDataTable("orcamento");
+
+ OrcTodosState = 1;
                 RectTrocaAba.IsHitTestVisible = false;
             }
             else
