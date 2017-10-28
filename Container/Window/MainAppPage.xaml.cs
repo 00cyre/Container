@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Windows.Forms.DataVisualization.Charting;
 using MySql.Data.MySqlClient;
 using System.Threading.Tasks;
-
+using System.Data;
 
 namespace Container
 {
@@ -18,6 +18,8 @@ namespace Container
     /// <summary>
     /// Lógica interna para MainAppPage.xaml
     /// </summary>
+    ///         private void exibir(grid Grid)
+        
     public partial class MainAppPage
     {
         Dictionary<int, double> value;
@@ -54,7 +56,38 @@ namespace Container
             chart.Series["series"].YValueMembers = "Value";
         }
 
+        private void exibir(grid Grid)
+        {
+            DataTable data = null;
+            switch (Grid)
+            {
+                case grid.orcamento:
+                    data = Database.selectDataTable("nome_orcamento, area_construcao, data_orcamento", "orcamento", $"empresa_id='{this.id}'");
+                    break;
+                case grid.orcamento_func:
+                    data = Database.selectDataTable("f.nome, o.nome_orcamento, of.total_funcionarios, of.horas_trabalhadas", "orcamento_funcionarios of JOIN orcamento o ON of.orcamento_id = o.id JOIN funcionarios f ON f.id = of.funcionarios_id", $"f.empresa_id='{this.id}' && o.empresa_id='{this.id}'");
+                    break;
+                case grid.orcamento_mat:
+                    data = Database.selectDataTable("m.nome_produto, o.nome_orcamento, om.unidades, om.total_material", "orcamento_materiais om JOIN orcamento o ON om.orcamento_id = o.id JOIN materiais m ON m.id = om.materiais_id", $"m.empresa_id='{this.id}' && o.empresa_id='{this.id}'");
+                    break;
+                case grid.material:
+                    data = Database.selectDataTable("nome_produto, marca, preco", "materiais", $"empresa_id='{this.id}'");
+                    break;
+                case grid.funcionario:
+                    data = Database.selectDataTable("nome, especialidade, preco_hora, telefone1, cidade", "funcionarios", $"empresa_id='{this.id}'");
+                    break;
+            }
+            DGridOrçamento.DataContext = data;
+        }
 
+        enum grid
+        {
+            orcamento,
+            orcamento_func,
+            orcamento_mat,
+            material,
+            funcionario
+        } 
         private void GridHead_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             base.OnMouseLeftButtonDown(e);
@@ -408,7 +441,8 @@ namespace Container
                             tatsar_Copy.Text = "Preço/h";
                             tatsar.Text = "Telefone";
                             TxtRegistrarOrc.Text = "Cidade";
-                            DGridOrçamento.DataContext = Database.selectDataTable("funcionarios");
+ 
+                            //DGridOrçamento.DataContext = Database.selectDataTable("funcionarios");
 
                             break;
                         }
@@ -423,7 +457,7 @@ namespace Container
                             tatsar_Copy.Text = "Nome";
                             tatsar.Text = "Marca";
                             TxtRegistrarOrc.Text = "Preço";
-                            DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
+                            exibir(grid.material);
                             break;
                         }
 
@@ -440,7 +474,7 @@ namespace Container
                 Storyboard sb = FindResource("IrPOrcamentos") as Storyboard;
                 sb.Begin();
                 await Task.Delay(500);
-                DGridOrçamento.DataContext = Database.selectDataTable("orcamento");
+                exibir(grid.orcamento);
                 OrcTodosState = 1;
                 RectTrocaAba.IsHitTestVisible = false;
             }
@@ -454,11 +488,13 @@ namespace Container
                     string id = Database.selectSingleValue("orcamento_materiais", "id > 0");
                     if (Convert.ToInt32(id) > 0)
                     {
+                        exibir(grid.orcamento_mat);
                        // DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
 
                     }
                     else
                     {
+                        exibir(grid.material);
                         //DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material");
 
                     }
