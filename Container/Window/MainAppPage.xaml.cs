@@ -493,7 +493,7 @@ namespace Container
                     Database.insert("orcamento_materiais", "");
                     break;
                 case grid.material:
-                    Database.insert("materiais", $"default, '{tatsar_Copy.Text}', '{tatsar.Text}', null, '{TxtRegistrarOrc.Text}', null, {id}");
+                    Database.insert("materiais", $"default, '{tatsar_Copy1.Text}', '{TxtRegistrarOrc.Text}', {tatsar.Text}, '{tatsar_Copy.Text}', null, {id}");
                     break;
                 case grid.funcionario:
                     Database.insert("funcionarios", "");
