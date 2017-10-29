@@ -326,7 +326,8 @@ namespace Container
                             sbr.Begin();
                             await Task.Delay(500);
                             tatsar_Copy2.Text = "Nome";
-                            tatsar_Copy.Text = "Preço/h";
+                            tatsar_Copy1.Text = "Profissão";
+                            tatsar_Copy.Text = "Preço/H";
                             tatsar.Text = "Telefone";
                             TxtRegistrarOrc.Text = "Cidade";
                             exibir(grid.funcionario);
@@ -455,18 +456,22 @@ namespace Container
             switch (Grid)
             {
                 case grid.orcamento:
+                    DGridOrçamento.MinColumnWidth = 230;
                     data = Database.selectDataTable("nome_orcamento, area_construcao, data_orcamento", "orcamento", $"empresa_id='{this.id}'");
                     break;
                 case grid.orcamento_func:
                     data = Database.selectDataTable("f.nome, o.nome_orcamento, of.total_funcionarios, of.horas_trabalhadas", "orcamento_funcionarios of JOIN orcamento o ON of.orcamento_id = o.id JOIN funcionarios f ON f.id = of.funcionarios_id", $"f.empresa_id='{this.id}' && o.empresa_id='{this.id}'");
                     break;
                 case grid.orcamento_mat:
+                    DGridOrçamento.MinColumnWidth = 366;
                     data = Database.selectDataTable("m.nome_produto, o.nome_orcamento, om.unidades, om.total_material", "orcamento_materiais om JOIN orcamento o ON om.orcamento_id = o.id JOIN materiais m ON m.id = om.materiais_id", $"m.empresa_id='{this.id}' && o.empresa_id='{this.id}'");
                     break;
                 case grid.material:
+                    DGridOrçamento.MinColumnWidth = 366;
                     data = Database.selectDataTable("nome_produto, marca, preco", "materiais", $"empresa_id='{this.id}'");
                     break;
                 case grid.funcionario:
+                    DGridOrçamento.MinColumnWidth = 230;
                     data = Database.selectDataTable("nome, especialidade, preco_hora, telefone1, cidade", "funcionarios", $"empresa_id='{this.id}'");
                     break;
             }
