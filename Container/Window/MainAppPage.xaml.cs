@@ -494,15 +494,14 @@ namespace Container
                     Database.insert("orcamento_materiais", "");
                     break;
                 case grid.material:
-<<<<<<< HEAD
                     tatsar_Copy1.Text = "Nome";
                     tatsar_Copy.Text = "Marca";
                     tatsar.Text = "Imposto";
                     TxtRegistrarOrc.Text = "Preço";
                     Database.insert("materiais", $"default, '{tatsar_Copy.Text}', '{tatsar.Text}', null, '{TxtRegistrarOrc.Text}', null, {id}");
-=======
+
                     Database.insert("materiais", $"default, '{tatsar_Copy1.Text}', '{TxtRegistrarOrc.Text}', {tatsar.Text}, '{tatsar_Copy.Text}', null, {id}");
->>>>>>> cedff08ab27ffb8b7f4cbd4dbfc5ebc691ba70dc
+
                     break;
                 case grid.funcionario:
                     Database.insert("funcionarios", "");
