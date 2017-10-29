@@ -875,6 +875,22 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="1"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tatsar_Copy2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle8">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tatsar_Copy1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle7">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="IrPTodos">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="ImgExpand">
@@ -2128,7 +2144,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <DataGrid x:Name="DGridOrçamento" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="430" Margin="24,65,0,0" VerticalAlignment="Top" Width="1118"  RowBackground="White" AlternatingRowBackground="White" HorizontalGridLinesBrush="#FFE5E5E5" VerticalGridLinesBrush="#FFE5E5E5" Foreground="#FFE55F0C" BorderBrush="{x:Null}" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Background="#FF0E0E0F" HeadersVisibility="None" SelectionChanged="DGridOrçamento_SelectionChanged" MaxColumnWidth="1920" MinColumnWidth="225" AutoGenerateColumns="true" RenderTransformOrigin="0.5,0.5" CanUserReorderColumns="False" CanUserResizeColumns="False" GridLinesVisibility="None" CanUserSortColumns="False" IsHitTestVisible="True" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Disabled" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
-                 
+
                         <DataGrid.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>

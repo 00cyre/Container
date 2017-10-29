@@ -309,10 +309,7 @@ namespace Container
                             sbr.Begin();
                             await Task.Delay(500);
                             //DGridOrçamento.Columns[0].Visibility = Visibility.Collapsed;
-                            tatsar_Copy1.Text = "Nome";
-                            tatsar_Copy.Text = "Marca";
-                            tatsar.Text = "Imposto";
-                            TxtRegistrarOrc.Text = "Preço";
+                            
                             exibir(grid.material);
                             //DGridOrçamento.DataContext = Database.selectDataTable("funcionarios");
 
@@ -326,11 +323,7 @@ namespace Container
                             Storyboard sbr = FindResource("AbazinhaOrcr") as Storyboard;
                             sbr.Begin();
                             await Task.Delay(500);
-                            tatsar_Copy2.Text = "Nome";
-                            tatsar_Copy1.Text = "Profissão";
-                            tatsar_Copy.Text = "Preço/H";
-                            tatsar.Text = "Telefone";
-                            TxtRegistrarOrc.Text = "Cidade";
+                            
                             exibir(grid.funcionario);
 
                             
@@ -458,6 +451,9 @@ namespace Container
             {
                 case grid.orcamento:
                     DGridOrçamento.MinColumnWidth = 330;
+                    tatsar_Copy.Text = "Nome";
+                    tatsar.Text = "Area";
+                    TxtRegistrarOrc.Text = "Total";
                     data = Database.selectDataTable("nome_orcamento, area_construcao, data_orcamento, total", "orcamento", $"empresa_id='{this.id}'");
                     break;
                 case grid.orcamento_func:
@@ -473,6 +469,11 @@ namespace Container
                     break;
                 case grid.funcionario:
                     DGridOrçamento.MinColumnWidth = 230;
+                    tatsar_Copy2.Text = "Nome";
+                    tatsar_Copy1.Text = "Profissão";
+                    tatsar_Copy.Text = "Preço/H";
+                    tatsar.Text = "Telefone";
+                    TxtRegistrarOrc.Text = "Cidade";
                     data = Database.selectDataTable("nome, especialidade, preco_hora, telefone1, cidade", "funcionarios", $"empresa_id='{this.id}'");
                     break;
             }
@@ -493,6 +494,10 @@ namespace Container
                     Database.insert("orcamento_materiais", "");
                     break;
                 case grid.material:
+                    tatsar_Copy1.Text = "Nome";
+                    tatsar_Copy.Text = "Marca";
+                    tatsar.Text = "Imposto";
+                    TxtRegistrarOrc.Text = "Preço";
                     Database.insert("materiais", $"default, '{tatsar_Copy.Text}', '{tatsar.Text}', null, '{TxtRegistrarOrc.Text}', null, {id}");
                     break;
                 case grid.funcionario:
