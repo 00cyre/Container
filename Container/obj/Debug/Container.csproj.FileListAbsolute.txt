@@ -170,3 +170,5 @@ C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Container.Prope
 C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Container.csproj.GenerateResource.Cache
 C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Container.exe
 C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Container.pdb
+C:\Users\Huron\Documents\GitHub\Container\Container\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+C:\Users\Huron\Documents\GitHub\Container\Container\bin\Debug\WPFToolkit.dll

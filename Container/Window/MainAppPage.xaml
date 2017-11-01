@@ -2,11 +2,12 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:winformchart="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization"
         mc:Ignorable="d"
-        Title="Container Master" Height="678.512" Width="1225" Background="{x:Null}" Foreground="White" WindowStyle="None" ResizeMode="NoResize" Icon="/Container;component/Images/logo_1.ico">
+        xmlns:datavis="clr-namespace:System.Windows.Controls.DataVisualization;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+        xmlns:chartingPrimitives="clr-namespace:System.Windows.Controls.DataVisualization.Charting.Primitives;assembly=System.Windows.Controls.DataVisualization.Toolkit" 
+        Title="Container Master" Height="678.512" Width="1225" Background="{x:Null}" Foreground="White" WindowStyle="None" ResizeMode="NoResize" Icon="/Container;component/Images/logo_1.ico"
+        xmlns:chartingToolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit">
     <Window.Resources>
         <Storyboard x:Key="LoginAnim"/>
         <Storyboard x:Key="AbrirMenuzin" x:Name="AbrirMenuzin">
@@ -2376,6 +2377,7 @@
                     </Rectangle.Effect>
                 </Rectangle>
             </Grid>
+            <Grid/>
             <Grid Grid.Column="1" HorizontalAlignment="Left" Height="621" Margin="10,10,0,0" VerticalAlignment="Top" Width="986" Background="#00000000" Grid.RowSpan="2">
                 <Grid HorizontalAlignment="Left" Height="112" Margin="0,509,0,0" VerticalAlignment="Top" Width="328" Background="#FF18181A">
                     <Rectangle HorizontalAlignment="Left" Height="92" StrokeThickness="2.5" VerticalAlignment="Top" Width="97" Fill="#FF343438" Margin="10,10,0,0"/>
@@ -2442,6 +2444,7 @@
                         </Rectangle.RenderTransform>
                     </Rectangle>
                 </Grid>
+
                 <Grid HorizontalAlignment="Left" Height="112" Margin="658,509,0,0" VerticalAlignment="Top" Width="328" Background="#FF18181A">
                     <Rectangle HorizontalAlignment="Left" Height="92" StrokeThickness="2.5" VerticalAlignment="Top" Width="97" Fill="#FF343438" Margin="10,10,0,0"/>
                     <Rectangle Fill="#FF2E2E2E" HorizontalAlignment="Left" Height="92" Margin="112,10,0,0" StrokeThickness="2.5" VerticalAlignment="Top" Width="205"/>
@@ -2493,34 +2496,115 @@
                         </Rectangle.RenderTransform>
                     </Rectangle>
                 </Grid>
-                <Grid Margin="10,79,663,112" Background="White">
-                    <WindowsFormsHost x:Name="host" Margin="52,104,856,279">
-                        <winformchart:Chart x:Name="Graficoz1" Dock="Fill">
-                            <winformchart:Chart.Series>
-                                <winformchart:Series Name="series" ChartType="Pie"/>
-                            </winformchart:Chart.Series>
-                            <winformchart:Chart.ChartAreas>
-                                <winformchart:ChartArea/>
-                            </winformchart:Chart.ChartAreas>
-                        </winformchart:Chart>
-                    </WindowsFormsHost>
+                <chartingToolkit:Chart Canvas.Top="80" Canvas.Left="10" Name="Chartz1" 
+           Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Margin="0,0,658,117">
 
+                    <chartingToolkit:Chart.LegendStyle>
+                        <Style TargetType="datavis:Legend">
+                            <Setter Property="Width" Value="0" />
+                        </Style>
+
+                    </chartingToolkit:Chart.LegendStyle>
+
+                    <chartingToolkit:Chart.ChartAreaStyle>
+                        <Style TargetType="chartingPrimitives:EdgePanel">
+
+                        </Style>
+                    </chartingToolkit:Chart.ChartAreaStyle>
+
+
+                    <chartingToolkit:Chart.PlotAreaStyle>
+
+                        <Style TargetType="Grid">
+                            <Setter Property="Background" Value="Transparent" />
+                        </Style>
+                    </chartingToolkit:Chart.PlotAreaStyle>
+
+                    <chartingToolkit:Chart.Series>
+
+                        <chartingToolkit:PieSeries Title="Experience" BorderBrush="Transparent" IndependentValueBinding="{Binding Path=Key}"  DependentValueBinding="{Binding Path=Value}">
+                        </chartingToolkit:PieSeries>
+                    </chartingToolkit:Chart.Series>
+                </chartingToolkit:Chart>
+
+                <chartingToolkit:Chart Canvas.Top="80" Canvas.Left="10" Name="Chartz2" 
+           Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Margin="328,-1,328,118">
+
+                    <chartingToolkit:Chart.LegendStyle>
+                        <Style TargetType="datavis:Legend">
+                            <Setter Property="Width" Value="0" />
+                        </Style>
+
+                    </chartingToolkit:Chart.LegendStyle>
+
+                    <chartingToolkit:Chart.ChartAreaStyle>
+                        <Style TargetType="chartingPrimitives:EdgePanel">
+
+                        </Style>
+                    </chartingToolkit:Chart.ChartAreaStyle>
+
+
+                    <chartingToolkit:Chart.PlotAreaStyle>
+
+                        <Style TargetType="Grid">
+                            <Setter Property="Background" Value="Transparent" />
+                        </Style>
+                    </chartingToolkit:Chart.PlotAreaStyle>
+
+                    <chartingToolkit:Chart.Series>
+
+                        <chartingToolkit:PieSeries  BorderBrush="Transparent" IndependentValueBinding="{Binding Path=Key}"  DependentValueBinding="{Binding Path=Value}">
+                        </chartingToolkit:PieSeries>
+                    </chartingToolkit:Chart.Series>
+                </chartingToolkit:Chart>
+
+                <Grid Grid.Column="1" HorizontalAlignment="Left" Height="631" Margin="996,-1,0,0" VerticalAlignment="Top" Width="191" Background="#FF151517" Panel.ZIndex="-20" Grid.RowSpan="2">
+                    <Label x:Name="label5" Content="Bem vindo" HorizontalAlignment="Left" Margin="8,7,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Panel.ZIndex="-19"/>
+                    <Label x:Name="LblProprietario" Content="&#xA;" HorizontalAlignment="Left" Margin="111,7,0,0" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="20" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Width="68" Background="{x:Null}" Panel.ZIndex="-19"/>
+                    <Label x:Name="label6" Content="Tipo de Conta" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="8,44,0,0" Height="33" Width="101" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" Panel.ZIndex="-19"/>
+                    <Label x:Name="LblTdeconta" Content="&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,44,0,0" Height="33" Width="73" Foreground="#FFFF6C0C" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" VerticalContentAlignment="Center" Panel.ZIndex="-19"/>
+                    <Label x:Name="label6_Copy1" Content="Tempo restante" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,77,0,0" Height="33" Width="104" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" Panel.ZIndex="-19"/>
+                    <Label x:Name="label6_Copy2" Content="Lifetime" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,77,0,0" Height="33" Width="60" Foreground="#FFFF6C0C" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Panel.ZIndex="-19"/>
+                    <Label x:Name="label6_Copy3" Content="A.I Server" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,110,0,0" Height="33" Width="104" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" Panel.ZIndex="-19"/>
+                    <Label x:Name="label6_Copy4" Content="Online" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,110,0,0" Height="33" Width="50" Foreground="#FF38FF0C" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Panel.ZIndex="-19"/>
                 </Grid>
+                <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="20" Margin="0,37,0,0" VerticalAlignment="Top" Width="328"/>
+                <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="435" Margin="7,47,0,0" VerticalAlignment="Top" Width="7"/>
+                <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="10" Margin="10,472,0,0" VerticalAlignment="Top" Width="307"/>
+                <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="435" Margin="313,47,0,0" VerticalAlignment="Top" Width="7"/>
+                <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="20" Margin="326,37,0,0" VerticalAlignment="Top" Width="328"/>
+                <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="435" Margin="336,47,0,0" VerticalAlignment="Top" Width="7"/>
+                <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="10" Margin="336,472,0,0" VerticalAlignment="Top" Width="307"/>
+                <chartingToolkit:Chart x:Name="Chartz3" 
+                    Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Margin="663,0,0,117">
 
-            </Grid>
-            <Grid Grid.Column="1" HorizontalAlignment="Left" Height="631" Margin="996,-1,0,0" VerticalAlignment="Top" Width="191" Background="#FF151517" Panel.ZIndex="-20" Grid.RowSpan="2">
-                <Label x:Name="label5" Content="Bem vindo" HorizontalAlignment="Left" Margin="8,7,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Panel.ZIndex="-19"/>
-                <Label x:Name="LblProprietario" Content="&#xA;" HorizontalAlignment="Left" Margin="111,7,0,0" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="20" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Width="68" Background="{x:Null}" Panel.ZIndex="-19"/>
-                <Label x:Name="label6" Content="Tipo de Conta" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="8,44,0,0" Height="33" Width="101" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" Panel.ZIndex="-19"/>
-                <Label x:Name="LblTdeconta" Content="&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,44,0,0" Height="33" Width="73" Foreground="#FFFF6C0C" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" VerticalContentAlignment="Center" Panel.ZIndex="-19"/>
-                <Label x:Name="label6_Copy1" Content="Tempo restante" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,77,0,0" Height="33" Width="104" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" Panel.ZIndex="-19"/>
-                <Label x:Name="label6_Copy2" Content="Lifetime" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,77,0,0" Height="33" Width="60" Foreground="#FFFF6C0C" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Panel.ZIndex="-19"/>
-                <Label x:Name="label6_Copy3" Content="A.I Server" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,110,0,0" Height="33" Width="104" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" Panel.ZIndex="-19"/>
-                <Label x:Name="label6_Copy4" Content="Online" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,110,0,0" Height="33" Width="50" Foreground="#FF38FF0C" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Panel.ZIndex="-19"/>
+                    <chartingToolkit:Chart.LegendStyle>
+                        <Style TargetType="{x:Type datavis:Legend}">
+                            <Setter Property="Width" Value="0" />
+                        </Style>
+
+                    </chartingToolkit:Chart.LegendStyle>
+
+                    <chartingToolkit:Chart.ChartAreaStyle>
+                        <Style TargetType="{x:Type chartingPrimitives:EdgePanel}"/>
+                    </chartingToolkit:Chart.ChartAreaStyle>
+
+
+                    <chartingToolkit:Chart.PlotAreaStyle>
+
+                        <Style TargetType="{x:Type Grid}">
+                            <Setter Property="Background" Value="Transparent" />
+                        </Style>
+                    </chartingToolkit:Chart.PlotAreaStyle>
+
+                    <chartingToolkit:PieSeries  BorderBrush="Transparent" IndependentValueBinding="{Binding Key}"  DependentValueBinding="{Binding Value}"/>
+                </chartingToolkit:Chart>
+                <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="435" Margin="969,47,0,0" VerticalAlignment="Top" Width="7"/>
+                <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="20" Margin="658,27,0,0" VerticalAlignment="Top" Width="328"/>
+                <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="435" Margin="670,37,0,0" VerticalAlignment="Top" Width="7"/>
+                <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="435" Margin="643,47,0,0" VerticalAlignment="Top" Width="7"/>
+                <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="10" Margin="670,472,0,0" VerticalAlignment="Top" Width="307"/>
             </Grid>
         </Grid>
-
-
-
     </Grid>
 </Window>

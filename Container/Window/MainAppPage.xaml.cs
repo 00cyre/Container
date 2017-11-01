@@ -7,10 +7,11 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Collections.Generic;
-using System.Windows.Forms.DataVisualization.Charting;
+
 using MySql.Data.MySqlClient;
 using System.Threading.Tasks;
 using System.Data;
+using System.Windows.Controls.DataVisualization.Charting;
 
 namespace Container
 {
@@ -22,7 +23,7 @@ namespace Container
         
     public partial class MainAppPage
     {
-        Dictionary<int, double> value;
+
         string login = MainWindow.nome;
         int id { get; set; }
         int ExpanderCodeState = 0, OrcTodosState = 0, orcabaState = 0, countAbazinhal = 0; //depois temos que definir os codigos de stado
@@ -41,23 +42,30 @@ namespace Container
                 LblTdeconta.Content = "Normal";
             }
 
-            exibir(grid.orcamento);
+            exibir(grid.funcionario);
 
-            List<string> list = new List<string>();
-            list.Add(Database.selectSingleValue("nome","funcionarios"," empresa_id = '666'"));
-            list.Add(Database.selectSingleValue("especialidade","funcionarios","empresa_id = '666'" ));
-            //DGridOrçamento.ItemsSource = list;
-
-            value = new Dictionary<int, double>();
-            for (int i = 0; i < 10; i++)
-                value.Add(i, 10 * i);
-
-            Chart chart = this.FindName("Graficoz1") as Chart;
-            chart.DataSource = value;
-            chart.Series["series"].XValueMember = "Key";
-            chart.Series["series"].YValueMembers = "Value";
+            LoadPieChartData();
         }
-
+        private void LoadPieChartData()
+        {
+            ((PieSeries) Chartz1.Series[0]).ItemsSource =
+                new KeyValuePair<string, int>[]{
+                    new KeyValuePair<string, int>("Project Manager", 50),
+                    new KeyValuePair<string, int>("Developer", 50)
+                };
+            ((PieSeries)Chartz2.Series[0]).ItemsSource =
+               new KeyValuePair<string, int>[]{
+                    new KeyValuePair<string, int>("Project Manager", 33),
+                    new KeyValuePair<string, int>("Developer", 33),
+                    new KeyValuePair<string, int>("ey", 33)
+               };
+            ((PieSeries)Chartz3.Series[0]).ItemsSource =
+                    new KeyValuePair<string, int>[]{
+                    new KeyValuePair<string, int>("Project Manager", 33),
+                    new KeyValuePair<string, int>("Developer", 33),
+                    new KeyValuePair<string, int>("ey", 33)
+            };
+        }
         private void GridHead_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             base.OnMouseLeftButtonDown(e);
@@ -420,29 +428,25 @@ namespace Container
                 await Task.Delay(500);
                 if(orcabaState == 0)
                 {
-                    string id = Database.selectSingleValue("orcamento_materiais", "id > 0");
-                    if (Convert.ToInt32(id) > 0)
-                    {
-                        exibir(grid.orcamento_mat);
+                        exibir(grid.material);
                        // DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
 
-                    }
-                    else
-                    {
-                        exibir(grid.funcionario);
+                        
                         //DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material");
 
-                    }
+                    
                 }
                 else
                 {
                     //DGridOrçamento.DataContext = Database.selectDataTable("", "funcionarios ", $"empresa_id={this.id}");
-
+                    exibir(grid.funcionario);
                 }
                 OrcTodosState = 0;
                 RectTrocaAba.IsHitTestVisible = true;
             }
         }
+
+
 
         private void exibir(grid Grid)
         {
@@ -466,6 +470,7 @@ namespace Container
                 case grid.material:
                     DGridOrçamento.MinColumnWidth = 430;
                     data = Database.selectDataTable("nome_produto, marca, preco", "materiais", $"empresa_id='{this.id}'");
+                    tatsar_Copy1.Text = "Nome";
                     break;
                 case grid.funcionario:
                     DGridOrçamento.MinColumnWidth = 230;
