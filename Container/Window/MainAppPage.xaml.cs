@@ -43,29 +43,50 @@ namespace Container
             }
 
             exibir(grid.funcionario);
+        }
 
-            LoadPieChartData();
-        }
-        private void LoadPieChartData()
+        private void criarGrafico()
         {
-            ((PieSeries) Chartz1.Series[0]).ItemsSource =
-                new KeyValuePair<string, int>[]{
-                    new KeyValuePair<string, int>("Project Manager", 50),
-                    new KeyValuePair<string, int>("Developer", 50)
-                };
-            ((PieSeries)Chartz2.Series[0]).ItemsSource =
-               new KeyValuePair<string, int>[]{
-                    new KeyValuePair<string, int>("Project Manager", 33),
-                    new KeyValuePair<string, int>("Developer", 33),
-                    new KeyValuePair<string, int>("ey", 33)
-               };
-            ((PieSeries)Chartz3.Series[0]).ItemsSource =
-                    new KeyValuePair<string, int>[]{
-                    new KeyValuePair<string, int>("Project Manager", 33),
-                    new KeyValuePair<string, int>("Developer", 33),
-                    new KeyValuePair<string, int>("ey", 33)
-            };
+            List<KeyValuePair<string, int>> valueList = new List<KeyValuePair<string, int>>();
+            Database.conexao.Open();
+            MySqlCommand cmd = new MySqlCommand("SELECT * FROM orcamento ORDER BY total LIMIT 6", Database.conexao);
+            using (var read = cmd.ExecuteReader())
+            {
+                while (read.Read())
+                {
+                    valueList.Add(new KeyValuePair<string, int>(Convert.ToString(read["nome_orcamento"]), Convert.ToInt32(read["total"])));
+                }
+            }
+            Database.conexao.Close();
+            Chartz1.DataContext = valueList;
+
+            List<KeyValuePair<string, int>> valueList2 = new List<KeyValuePair<string, int>>();
+            Database.conexao.Open();
+            cmd = new MySqlCommand("SELECT * FROM funcionarios ORDER BY preco_hora LIMIT 6", Database.conexao);
+            using (var read = cmd.ExecuteReader())
+            {
+                while (read.Read())
+                {
+                    valueList2.Add(new KeyValuePair<string, int>(Convert.ToString(read["nome"]), Convert.ToInt32(read["preco_hora"])));
+                }
+            }
+            Database.conexao.Close();
+            Chartz2.DataContext = valueList2;
+
+            List<KeyValuePair<string, int>> valueList3 = new List<KeyValuePair<string, int>>();
+            Database.conexao.Open();
+            cmd = new MySqlCommand("SELECT * FROM materiais ORDER BY preco LIMIT 6", Database.conexao);
+            using (var read = cmd.ExecuteReader())
+            {
+                while (read.Read())
+                {
+                    valueList3.Add(new KeyValuePair<string, int>(Convert.ToString(read["nome_produto"]), Convert.ToInt32(read["preco"])));
+                }
+            }
+            Database.conexao.Close();
+            Chartz3.DataContext = valueList3;
         }
+
         private void GridHead_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             base.OnMouseLeftButtonDown(e);
