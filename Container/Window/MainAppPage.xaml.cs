@@ -50,8 +50,7 @@ namespace Container
 
             private void criarGrafico()
         {
-            List<KeyValuePair<string, int>> valueList = new List<KeyValuePair<string, int>>();
-            List<string> nameList = new List<string>();
+            List<KeyValuePair<string, double>> valueList = new List<KeyValuePair<string, double>>();
 
             Database.conexao.Open();
             MySqlCommand cmd = new MySqlCommand("SELECT * FROM orcamento ORDER BY total DESC LIMIT 6", Database.conexao);
@@ -59,49 +58,49 @@ namespace Container
             {
                 while (read.Read())
                 {
-                    valueList.Add(new KeyValuePair<string, int>(Convert.ToString(read["nome_orcamento"]), Convert.ToInt32(read["total"])));
-                    nameList.Add(read["nome_orcamento"].ToString());
+                    valueList.Add(new KeyValuePair<string, double>(Convert.ToString(read["nome_orcamento"]), Convert.ToDouble(read["total"])));
                 }
             }
             Database.conexao.Close();
 
             ((PieSeries)Chartz1.Series[0]).ItemsSource = valueList.ToArray();
 
-            if (valueList.Count > 0)
-                label4.Content = nameList[0];
-                if (valueList.Count > 1)
-                    label4_Copy.Content = nameList[1];  
-                    if (valueList.Count > 2)
-                        label4_Copy1.Content = nameList[2];
-                        if (valueList.Count > 3)
-                            label4_Copy2.Content = nameList[3];
-                            if (valueList.Count > 4)
-                                label4_Copy3.Content = nameList[4];
-                                if (valueList.Count > 5)
-                                    label4_Copy4.Content = nameList[5];
+            try
+            {
+                label4.Content = valueList[0].Key;
+                label4_Copy.Content = valueList[1].Key;
+                label4_Copy1.Content = valueList[2].Key;
+                label4_Copy2.Content = valueList[3].Key;
+                label4_Copy3.Content = valueList[4].Key;
+                label4_Copy4.Content = valueList[5].Key;
+            }
+            catch
+            {
 
-            List<KeyValuePair<string, int>> valueList2 = new List<KeyValuePair<string, int>>();
+            }
+
+            List<KeyValuePair<string, double>> valueList2 = new List<KeyValuePair<string, double>>();
             Database.conexao.Open();
-            cmd = new MySqlCommand("SELECT * FROM funcionarios ORDER BY preco_hora LIMIT 6", Database.conexao);
+            cmd = new MySqlCommand("SELECT * FROM funcionarios ORDER BY preco_hora DESC LIMIT 6", Database.conexao);
             using (var read = cmd.ExecuteReader())
             {
                 while (read.Read())
                 {
-                    valueList2.Add(new KeyValuePair<string, int>(Convert.ToString(read["nome"]), Convert.ToInt32(read["preco_hora"])));
+                    valueList2.Add(new KeyValuePair<string, double>(Convert.ToString(read["nome"]), Convert.ToDouble(read["preco_hora"])));
                 }
             }
             Database.conexao.Close();
             ((PieSeries)Chartz2.Series[0]).ItemsSource = valueList2;
 
 
-            List<KeyValuePair<string, int>> valueList3 = new List<KeyValuePair<string, int>>();
+            List<KeyValuePair<string, double>> valueList3 = new List<KeyValuePair<string, double>>();
             Database.conexao.Open();
-            cmd = new MySqlCommand("SELECT * FROM materiais ORDER BY preco LIMIT 6", Database.conexao);
+            cmd = new MySqlCommand("SELECT * FROM materiais ORDER BY preco DESC LIMIT 6", Database.conexao);
             using (var read = cmd.ExecuteReader())
             {
                 while (read.Read())
                 {
-                    valueList3.Add(new KeyValuePair<string, int>(Convert.ToString(read["nome_produto"]), Convert.ToInt32(read["preco"])));
+                    valueList3.Add(new KeyValuePair<string, double>(Convert.ToString(read["nome_produto"]), Convert.ToDouble(read["preco"])));
                 }
             }
             Database.conexao.Close();
