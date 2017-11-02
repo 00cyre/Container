@@ -7,11 +7,13 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Collections.Generic;
-
+using System.Linq;
+using System.Web;
 using MySql.Data.MySqlClient;
 using System.Threading.Tasks;
 using System.Data;
 using System.Windows.Controls.DataVisualization.Charting;
+using System.Globalization;
 
 namespace Container
 {
@@ -41,24 +43,41 @@ namespace Container
             {
                 LblTdeconta.Content = "Normal";
             }
-
+            criarGrafico();
             exibir(grid.funcionario);
         }
-
+       
         private void criarGrafico()
         {
-            List<KeyValuePair<string, int>> valueList = new List<KeyValuePair<string, int>>();
+            List<KeyValuePair<string, int?>> valueList = new List<KeyValuePair<string, int?>>();
+            List<string> nameList = new List<string>();
+
             Database.conexao.Open();
             MySqlCommand cmd = new MySqlCommand("SELECT * FROM orcamento ORDER BY total LIMIT 6", Database.conexao);
             using (var read = cmd.ExecuteReader())
             {
                 while (read.Read())
                 {
-                    valueList.Add(new KeyValuePair<string, int>(Convert.ToString(read["nome_orcamento"]), Convert.ToInt32(read["total"])));
+                    valueList.Add(new KeyValuePair<string, int?>(Convert.ToString(read["nome_orcamento"]), Convert.ToInt32(read["total"])));
+                    nameList.Add(read["nome_orcamento"].ToString());
                 }
             }
             Database.conexao.Close();
-            Chartz1.DataContext = valueList;
+
+            Chartz1.DataContext = 200;
+            
+            if (valueList.Count > 0)
+                label4.Content = nameList[0];
+                if (valueList.Count > 1)
+                    label4_Copy.Content = nameList[1];  
+                    if (valueList.Count > 2)
+                        label4_Copy1.Content = nameList[2];
+                        if (valueList.Count > 3)
+                            label4_Copy2.Content = nameList[3];
+                            if (valueList.Count > 4)
+                                label4_Copy3.Content = nameList[4];
+                                if (valueList.Count > 5)
+                                    label4_Copy4.Content = nameList[5];
 
             List<KeyValuePair<string, int>> valueList2 = new List<KeyValuePair<string, int>>();
             Database.conexao.Open();
@@ -72,6 +91,7 @@ namespace Container
             }
             Database.conexao.Close();
             Chartz2.DataContext = valueList2;
+            
 
             List<KeyValuePair<string, int>> valueList3 = new List<KeyValuePair<string, int>>();
             Database.conexao.Open();

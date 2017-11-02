@@ -2429,12 +2429,12 @@
                             </TransformGroup>
                         </Rectangle.RenderTransform>
                     </Rectangle>
-                    <Label x:Name="label4" Content="Dados:x" HorizontalAlignment="Left" Margin="127,42,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
-                    <Label x:Name="label4_Copy" Content="Dados:y" HorizontalAlignment="Left" Margin="127,68,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
-                    <Label x:Name="label4_Copy1" Content="Dados:x" HorizontalAlignment="Left" Margin="184,42,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
-                    <Label x:Name="label4_Copy2" Content="Dados:y" HorizontalAlignment="Left" Margin="184,68,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
-                    <Label x:Name="label4_Copy3" Content="Dados:x" HorizontalAlignment="Left" Margin="241,42,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
-                    <Label x:Name="label4_Copy4" Content="Dados:y" HorizontalAlignment="Left" Margin="241,68,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
+                    <Label x:Name="label4" Content="" HorizontalAlignment="Left" Margin="127,42,0,0" VerticalAlignment="Top" Foreground="#FFF9A410" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                    <Label x:Name="label4_Copy" Content="" HorizontalAlignment="Left" Margin="127,68,0,0" VerticalAlignment="Top" Foreground="#FFF9CF10" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                    <Label x:Name="label4_Copy1" Content="" HorizontalAlignment="Left" Margin="184,42,0,0" VerticalAlignment="Top" Foreground="#FFE4F910" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                    <Label x:Name="label4_Copy2" Content="" HorizontalAlignment="Left" Margin="184,68,0,0" VerticalAlignment="Top" Foreground="#FFAFF910" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                    <Label x:Name="label4_Copy3" Content="" HorizontalAlignment="Left" Margin="241,42,0,0" VerticalAlignment="Top" Foreground="#FF3AF910" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                    <Label x:Name="label4_Copy4" Content="" HorizontalAlignment="Left" Margin="241,68,0,0" VerticalAlignment="Top" Foreground="#FF10F99A" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
                     <Label Content="$" HorizontalAlignment="Left" VerticalAlignment="Top" Height="112" Width="107" Foreground="#FF242426" FontSize="72" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="/Container;component/Font/NTR/#NTR" Margin="5,-18,0,0"/>
                 </Grid>
                 <Grid HorizontalAlignment="Left" Height="112" Margin="328,509,0,0" VerticalAlignment="Top" Width="330" Background="#FF18181A">
@@ -2532,7 +2532,7 @@
                         </Rectangle.RenderTransform>
                     </Rectangle>
                 </Grid>
-                <chartingToolkit:Chart Canvas.Top="80" Canvas.Left="10" Name="Chartz1" 
+                <chartingToolkit:Chart Canvas.Top="80" DataContext="{Binding}" Canvas.Left="10" Name="Chartz1" 
            Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Margin="0,0,658,117">
 
                     <chartingToolkit:Chart.LegendStyle>
@@ -2558,13 +2558,13 @@
 
                     <chartingToolkit:Chart.Series>
 
-                        <chartingToolkit:PieSeries Title="Experience" BorderBrush="Transparent" IndependentValueBinding="{Binding Path=Key}"  DependentValueBinding="{Binding Path=Value}">
+                        <chartingToolkit:PieSeries Title="Experience" BorderBrush="Transparent" DataContext="{Binding}" IndependentValueBinding="{Binding Path=Key}"  DependentValueBinding="{Binding Path=Value}">
                         </chartingToolkit:PieSeries>
                     </chartingToolkit:Chart.Series>
                 </chartingToolkit:Chart>
 
                 <chartingToolkit:Chart Canvas.Top="80" Canvas.Left="10" Name="Chartz2" 
-           Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Margin="328,-1,328,118">
+           Background="Transparent" BorderBrush="Transparent" BorderThickness="0" DataContext="{Binding}" Margin="328,-1,328,118">
 
                     <chartingToolkit:Chart.LegendStyle>
                         <Style TargetType="datavis:Legend">
@@ -2589,7 +2589,7 @@
 
                     <chartingToolkit:Chart.Series>
 
-                        <chartingToolkit:PieSeries  BorderBrush="Transparent" IndependentValueBinding="{Binding Path=Key}"  DependentValueBinding="{Binding Path=Value}">
+                        <chartingToolkit:PieSeries  BorderBrush="Transparent" DataContext="{Binding}" IndependentValueBinding="{Binding Path=Key}"  DependentValueBinding="{Binding Path=Value}">
                         </chartingToolkit:PieSeries>
                     </chartingToolkit:Chart.Series>
                 </chartingToolkit:Chart>
@@ -2601,7 +2601,7 @@
                 <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="435" Margin="336,47,0,0" VerticalAlignment="Top" Width="7"/>
                 <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="10" Margin="336,472,0,0" VerticalAlignment="Top" Width="307"/>
                 <chartingToolkit:Chart x:Name="Chartz3" 
-                    Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Margin="663,0,0,117">
+                    Background="Transparent" BorderBrush="Transparent" DataContext="{Binding}" BorderThickness="0" Margin="663,0,0,117">
 
                     <chartingToolkit:Chart.LegendStyle>
                         <Style TargetType="{x:Type datavis:Legend}">
@@ -2622,7 +2622,7 @@
                         </Style>
                     </chartingToolkit:Chart.PlotAreaStyle>
 
-                    <chartingToolkit:PieSeries  BorderBrush="Transparent" IndependentValueBinding="{Binding Key}"  DependentValueBinding="{Binding Value}"/>
+                    <chartingToolkit:PieSeries  DataContext="{Binding}" BorderBrush="Transparent" IndependentValueBinding="{Binding Key}"  DependentValueBinding="{Binding Value}"/>
                 </chartingToolkit:Chart>
                 <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="435" Margin="969,47,0,0" VerticalAlignment="Top" Width="7"/>
                 <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="20" Margin="670,27,0,0" VerticalAlignment="Top" Width="306"/>
