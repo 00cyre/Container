@@ -30,7 +30,7 @@ namespace Container
         public MainAppPage()
         {
             InitializeComponent();
-
+            orcabaState = 1;
             id = Convert.ToInt32(Database.selectSingleValue("id", "empresa", $"email = '{login}'"));
             LblProprietario.Content = login;
             if (id > 500)
@@ -251,23 +251,7 @@ namespace Container
 
         }
 
-        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
-        {
 
-            Color colore = (Color)ColorConverter.ConvertFromString("#FFB2B2B2");
-            plush.Fill = new SolidColorBrush(colore);
-            plusv.Fill = new SolidColorBrush(colore);
-            Color colorb = (Color)ColorConverter.ConvertFromString("#FF00B229");
-            ElpseAddOrc.Stroke = new SolidColorBrush(Color.FromArgb(255, 0, 178, 41));
-            DateTime theDate = DateTime.Now;
-            string id = Database.selectSingleValue("empresa","nome_empresa = '" + login.ToString() + "'");
-            Database.insert("orcamento", "default," + "'"+ TxtRegistrarOrc.Text + "'," + "'" + tatsar.Text + "'," + "'" + theDate.ToString("yyyy-MM-dd H:mm:ss") +  "',NULL,NULL,NULL,NULL," + id);
-            exibir(grid.orcamento);
-            //DGridOrçamento.DataContext = Database.selectDataTable("orcamento");
-
-
-
-        }
 
         private void Grid_MouseUp(object sender, MouseButtonEventArgs e)
         {
@@ -311,7 +295,7 @@ namespace Container
                     case 0:
                         {
                             orcabaState = 1;
-                            //mudar conteudo da datagrid para os operarios
+                            //mudar conteudo da datagrid para os materiais
 
                             Storyboard sbr = FindResource("AbazinhaOrc") as Storyboard;
                             sbr.Begin();
@@ -326,7 +310,7 @@ namespace Container
                     case 1:
                         {
                             orcabaState = 0;
-                            //mudar conteudo datagrid para materiais
+                            //mudar conteudo datagrid para operarios
 
                             Storyboard sbr = FindResource("AbazinhaOrcr") as Storyboard;
                             sbr.Begin();
@@ -345,8 +329,45 @@ namespace Container
             }
 
         }
-    
 
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+            Color colore = (Color)ColorConverter.ConvertFromString("#FFB2B2B2");
+            plush.Fill = new SolidColorBrush(colore);
+            plusv.Fill = new SolidColorBrush(colore);
+            Color colorb = (Color)ColorConverter.ConvertFromString("#FF00B229");
+            ElpseAddOrc.Stroke = new SolidColorBrush(Color.FromArgb(255, 0, 178, 41));
+            DateTime theDate = DateTime.Now;
+            if (OrcTodosState == 0)//ír p orcamentos
+            {
+
+            }
+            else //ir p todos
+            {
+                switch (orcabaState)
+                {
+                    case 1: // materiais
+                        {
+
+                            Database.insert("materiais", $"nome_produto = '{tatsar_Copy1.Text}', marca = '{tatsar_Copy.Text}', imposto = '{tatsar.Text}', preco = '{TxtRegistrarOrc.Text}'");
+                            exibir(grid.material);
+                            break;
+                        }
+                    case 0: // funcionarios
+                        {
+                            break;
+                        }
+                }
+            }
+
+           // Database.insert("orcamento", "default," + "'" + TxtRegistrarOrc.Text + "'," + "'" + tatsar.Text + "'," + "'" + theDate.ToString("yyyy-MM-dd H:mm:ss") + "',NULL,NULL,NULL,NULL," + id);
+            //exibir(grid.orcamento);
+            //DGridOrçamento.DataContext = Database.selectDataTable("orcamento");
+
+
+
+        }
 
 
         private void RegistrarFunc_MouseEnter(object sender, MouseEventArgs e)
@@ -428,7 +449,8 @@ namespace Container
                 await Task.Delay(500);
                 if(orcabaState == 0)
                 {
-                        exibir(grid.material);
+
+                    exibir(grid.material);
                        // DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
 
                         
@@ -438,6 +460,7 @@ namespace Container
                 }
                 else
                 {
+
                     //DGridOrçamento.DataContext = Database.selectDataTable("", "funcionarios ", $"empresa_id={this.id}");
                     exibir(grid.funcionario);
                 }
@@ -471,6 +494,9 @@ namespace Container
                     DGridOrçamento.MinColumnWidth = 430;
                     data = Database.selectDataTable("nome_produto, marca, preco", "materiais", $"empresa_id='{this.id}'");
                     tatsar_Copy1.Text = "Nome";
+                    tatsar_Copy.Text = "Marca";
+                    tatsar.Text = "Imposto";
+                    TxtRegistrarOrc.Text = "Preço";
                     break;
                 case grid.funcionario:
                     DGridOrçamento.MinColumnWidth = 230;
@@ -479,7 +505,7 @@ namespace Container
                     tatsar_Copy.Text = "Preço/H";
                     tatsar.Text = "Telefone";
                     TxtRegistrarOrc.Text = "Cidade";
-                    data = Database.selectDataTable("nome, especialidade, preco_hora, telefone1, cidade", "funcionarios", $"empresa_id='{this.id}'");
+                    data = Database.selectDataTable("nome, especialidade, preco_hora, telefone, cidade", "funcionarios", $"empresa_id='{this.id}'");
                     break;
             }
             DGridOrçamento.DataContext = data;
