@@ -54,7 +54,7 @@ namespace Container
             List<string> nameList = new List<string>();
 
             Database.conexao.Open();
-            MySqlCommand cmd = new MySqlCommand("SELECT * FROM orcamento ORDER BY total LIMIT 6", Database.conexao);
+            MySqlCommand cmd = new MySqlCommand("SELECT * FROM orcamento ORDER BY total DESC LIMIT 6", Database.conexao);
             using (var read = cmd.ExecuteReader())
             {
                 while (read.Read())
@@ -65,7 +65,7 @@ namespace Container
             }
             Database.conexao.Close();
 
-            ((PieSeries)Chartz1.Series[0]).ItemsSource = valueList;
+            ((PieSeries)Chartz1.Series[0]).ItemsSource = valueList.ToArray();
 
             if (valueList.Count > 0)
                 label4.Content = nameList[0];
