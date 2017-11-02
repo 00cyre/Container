@@ -2558,7 +2558,7 @@
 
                     <chartingToolkit:Chart.Series>
 
-                        <chartingToolkit:PieSeries Title="Experience" BorderBrush="Transparent" DataContext="{Binding}" IndependentValueBinding="{Binding Path=Key}"  DependentValueBinding="{Binding Path=Value}">
+                        <chartingToolkit:PieSeries  BorderBrush="Transparent" DataContext="{Binding}" IndependentValueBinding="{Binding Path=Key}"  DependentValueBinding="{Binding Path=Value}">
                         </chartingToolkit:PieSeries>
                     </chartingToolkit:Chart.Series>
                 </chartingToolkit:Chart>

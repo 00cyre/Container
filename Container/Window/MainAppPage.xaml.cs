@@ -44,12 +44,13 @@ namespace Container
                 LblTdeconta.Content = "Normal";
             }
             criarGrafico();
+
             exibir(grid.funcionario);
         }
-       
-        private void criarGrafico()
+
+            private void criarGrafico()
         {
-            List<KeyValuePair<string, int?>> valueList = new List<KeyValuePair<string, int?>>();
+            List<KeyValuePair<string, int>> valueList = new List<KeyValuePair<string, int>>();
             List<string> nameList = new List<string>();
 
             Database.conexao.Open();
@@ -58,14 +59,14 @@ namespace Container
             {
                 while (read.Read())
                 {
-                    valueList.Add(new KeyValuePair<string, int?>(Convert.ToString(read["nome_orcamento"]), Convert.ToInt32(read["total"])));
+                    valueList.Add(new KeyValuePair<string, int>(Convert.ToString(read["nome_orcamento"]), Convert.ToInt32(read["total"])));
                     nameList.Add(read["nome_orcamento"].ToString());
                 }
             }
             Database.conexao.Close();
 
-            Chartz1.DataContext = 200;
-            
+            ((PieSeries)Chartz1.Series[0]).ItemsSource = valueList;
+
             if (valueList.Count > 0)
                 label4.Content = nameList[0];
                 if (valueList.Count > 1)
@@ -90,8 +91,8 @@ namespace Container
                 }
             }
             Database.conexao.Close();
-            Chartz2.DataContext = valueList2;
-            
+            ((PieSeries)Chartz2.Series[0]).ItemsSource = valueList2;
+
 
             List<KeyValuePair<string, int>> valueList3 = new List<KeyValuePair<string, int>>();
             Database.conexao.Open();
@@ -104,7 +105,7 @@ namespace Container
                 }
             }
             Database.conexao.Close();
-            Chartz3.DataContext = valueList3;
+            ((PieSeries)Chartz3.Series[0]).ItemsSource = valueList3;
         }
 
         private void GridHead_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
