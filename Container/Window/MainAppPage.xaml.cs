@@ -543,7 +543,7 @@ namespace Container
             Color colorb = (Color)ColorConverter.ConvertFromString("#FF00B229");
             ElpseAddOrc.Stroke = new SolidColorBrush(Color.FromArgb(255, 0, 178, 41));
             DateTime theDate = DateTime.Now;
-            if (OrcTodosState == 1)//orcamentos
+            if (OrcTodosState == 0)//orcamentos
             {
                 inserir(grid.orcamento);
                 exibir(grid.orcamento);
@@ -551,16 +551,16 @@ namespace Container
             }
             else //todos
             {switch (orcabaState){
-                        case 1: //materiais
-                            {
-                            inserir(grid.funcionario);
-                            exibir(grid.funcionario);
-                            break;
-                        }
                         case 0: //funcionarios
                             {
+                            inserir(grid.funcionario);
+                            criarGrafico();
+                            break;
+                        }
+                        case 1: //materiais
+                            {
                             inserir(grid.material);
-                            exibir(grid.material);
+                            criarGrafico();
                             break;
                             
                             }}}}
@@ -575,6 +575,7 @@ namespace Container
                             if (TxtRegistrarOrc.Text != string.Empty && Regex.IsMatch(TxtRegistrarOrc.Text, @"^[0-9]+$") == true)
                             {
                                 Database.insert("orcamento", $"default, '{tatsar_Copy.Text}', '{tatsar.Text}', '{DateTime.Now.ToString("yyyy-MM-dd")}', '{TxtRegistrarOrc.Text}', null, null, null, {id}");
+                                exibir(grid.orcamento);
                             }
                             else
                             {
@@ -596,6 +597,7 @@ namespace Container
                         if (TxtRegistrarOrc.Text != string.Empty && Regex.IsMatch(TxtRegistrarOrc.Text, @"^[0-9]+$") == true)
                         {
                             Database.insert("materiais", $"default, '{tatsar_Copy1.Text}', '{TxtRegistrarOrc.Text}', {tatsar.Text}, '{tatsar_Copy.Text}', null, {id}");
+                            exibir(grid.material);
                         }
                         else
                         {
@@ -614,6 +616,7 @@ namespace Container
                             if (TxtRegistrarOrc.Text != string.Empty && Regex.IsMatch(TxtRegistrarOrc.Text, @"^[0-9]+$") == true)
                             {
                                 Database.insert("funcionarios", $"default, '{tatsar_Copy1.Text}', '{tatsar_Copy2.Text}','{TxtRegistrarOrc.Text}', null, null, '{tatsar.Text}', '{tatsar_Copy.Text}',null, '{id}'");
+                                exibir(grid.funcionario);
                             }
                             else
                             {
