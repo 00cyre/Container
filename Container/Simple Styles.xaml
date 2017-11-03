@@ -4,7 +4,7 @@
     
     <!-- Brushes : These are used to define the color for background, foreground, selection, enabled etc of all controls
     If you want to change the color of a control you can just chnage the brush; if you want to add a new shape or change arrangement then also edit the template -->
-    
+
     <!-- NormalBrush is used as the Background for SimpleButton, SimpleRepeatButton -->
     <LinearGradientBrush x:Key="NormalBrush" EndPoint="0,1" StartPoint="0,0">
         <GradientStop Color="#EEE" Offset="0.0"/>
@@ -14,7 +14,10 @@
         <GradientStop Color="#CCC" Offset="0.0"/>
         <GradientStop Color="#444" Offset="1.0"/>
     </LinearGradientBrush>
-    
+
+
+
+
     <!-- LightBrush is used for content areas such as Menu, Tab Control background -->
     <LinearGradientBrush x:Key="LightBrush" EndPoint="0,1" StartPoint="0,0">
         <GradientStop Color="#FFF" Offset="0.0"/>

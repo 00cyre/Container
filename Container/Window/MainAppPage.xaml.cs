@@ -28,7 +28,7 @@ namespace Container
         int countignore = 0;
         string login = MainWindow.nome;
         int id { get; set; }
-        int ExpanderCodeState = 0, OrcTodosState = 1, orcabaState = 1, countAbazinhal = 0; //depois temos que definir os codigos de stado
+        int ExpanderCodeState = 0, OrcTodosState = 1, orcabaState = 0, countAbazinhal = 0; //depois temos que definir os codigos de stado
         public MainAppPage()
         {
             InitializeComponent();
@@ -69,7 +69,6 @@ namespace Container
                 }
             }
             Database.conexao.Close();
-
             ((PieSeries)Chartz1.Series[0]).ItemsSource = valueList.ToArray();
 
             try
@@ -239,13 +238,7 @@ namespace Container
                         ExpanderCodeState = 4;
                         break;
                     }
-                case 5:
-                    {
-                        Storyboard sbr = FindResource("AbrirMenuFunc") as Storyboard;
-                        sbr.Begin();
-                        ExpanderCodeState = 6;
-                        break;
-                    }
+
             }
 
         }
@@ -352,12 +345,9 @@ namespace Container
                 orcabaState = 1;
                 //mudar conteudo datagrid para materiais
                 countAbazinhal++;
-                Storyboard sbr = FindResource("AbazinhaOrc1st") as Storyboard;
+                Storyboard sbr = FindResource("AbazinhaOrc") as Storyboard;
                 sbr.Begin();
                 await Task.Delay(500);
-                tatsar_Copy.Text = "Marca";
-                tatsar.Text = "Imposto";
-                TxtRegistrarOrc.Text = "Preço";
                 exibir(grid.material);
                 //DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
                 countAbazinhal++;
@@ -411,7 +401,7 @@ namespace Container
                 if (countignore == 0)//funcionarios na primeira vez(bugz loco)
                 {
 
-                    countignore++;
+                    countignore = 1;
                     exibir(grid.funcionario);
                 }
                 else
@@ -511,25 +501,33 @@ namespace Container
             }
             else
             {
-                Storyboard sb = FindResource("IrPTodos") as Storyboard;
-                sb.Begin();
-                await Task.Delay(500);
+                
+                
+                
                 if(orcabaState == 0)
                 {
-
-                    
-                    // DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
-
-
-                    //DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material");
-
+                    Storyboard sb = FindResource("IrPTodosF") as Storyboard;
+                    sb.Begin();
+                    await Task.Delay(500);
                     exibir(grid.funcionario);
+
                 }
                 else
                 {
-
-                    //DGridOrçamento.DataContext = Database.selectDataTable("", "funcionarios ", $"empresa_id={this.id}");
-                    exibir(grid.material);
+                    if (countAbazinhal == 0)
+                    {
+                        Storyboard sb = FindResource("IrPTodosF") as Storyboard;
+                        sb.Begin();
+                        await Task.Delay(500);
+                        exibir(grid.funcionario);
+                    }
+                    else
+                    {
+                        Storyboard sb1 = FindResource("IrPTodos") as Storyboard;
+                        sb1.Begin();
+                        await Task.Delay(500);
+                        exibir(grid.material);
+                    }
                 }
                 OrcTodosState = 1;
                 RectTrocaAba.IsHitTestVisible = true;

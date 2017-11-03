@@ -172,3 +172,11 @@ C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Container.exe
 C:\Users\gabri\Desktop\container\p\Container\Container\obj\Debug\Container.pdb
 C:\Users\Huron\Documents\GitHub\Container\Container\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
 C:\Users\Huron\Documents\GitHub\Container\Container\bin\Debug\WPFToolkit.dll
+C:\Users\Huron\Documents\GitHub\Container\Container\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\Huron\Documents\GitHub\Container\Container\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\Huron\Documents\GitHub\Container\Container\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Huron\Documents\GitHub\Container\Container\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\Huron\Documents\GitHub\Container\Container\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\Huron\Documents\GitHub\Container\Container\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\Huron\Documents\GitHub\Container\Container\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\Huron\Documents\GitHub\Container\Container\bin\Debug\Xamarin.Forms.Xaml.xml
