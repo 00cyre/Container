@@ -25,10 +25,10 @@ namespace Container
         
     public partial class MainAppPage
     {
-
+        int countignore = 0;
         string login = MainWindow.nome;
         int id { get; set; }
-        int ExpanderCodeState = 0, OrcTodosState = 0, orcabaState = 0, countAbazinhal = 0; //depois temos que definir os codigos de stado
+        int ExpanderCodeState = 0, OrcTodosState = 1, orcabaState = 1, countAbazinhal = 0; //depois temos que definir os codigos de stado
         public MainAppPage()
         {
             InitializeComponent();
@@ -92,7 +92,20 @@ namespace Container
             Database.conexao.Close();
             ((PieSeries)Chartz2.Series[0]).ItemsSource = valueList2;
 
+            try
+            {
+                label3.Content = valueList2[0].Key;
+                label4_Copy5.Content = valueList2[1].Key;
+                label4_Copy6.Content = valueList2[2].Key;
+                label4_Copy7.Content = valueList2[3].Key;
+                label4_Copy8.Content = valueList2[4].Key;
+                label4_Copy9.Content = valueList2[5].Key;
+                
+            }
+            catch
+            {
 
+            }
             List<KeyValuePair<string, double>> valueList3 = new List<KeyValuePair<string, double>>();
             Database.conexao.Open();
             cmd = new MySqlCommand("SELECT * FROM materiais ORDER BY preco DESC LIMIT 6", Database.conexao);
@@ -105,6 +118,20 @@ namespace Container
             }
             Database.conexao.Close();
             ((PieSeries)Chartz3.Series[0]).ItemsSource = valueList3;
+            try
+            {
+                label8.Content = valueList[0].Key;
+                label4_Copy10.Content = valueList3[1].Key;
+                label4_Copy11.Content = valueList3[2].Key;
+                label4_Copy12.Content = valueList3[3].Key;
+                label4_Copy13.Content = valueList3[4].Key;
+                label4_Copy14.Content = valueList3[5].Key;
+
+            }
+            catch
+            {
+
+            }
         }
 
         private void GridHead_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -337,34 +364,22 @@ namespace Container
                         {
                             orcabaState = 1;
                             //mudar conteudo da datagrid para os materiais
-
                             Storyboard sbr = FindResource("AbazinhaOrc") as Storyboard;
                             sbr.Begin();
                             await Task.Delay(500);
-                            //DGridOrçamento.Columns[0].Visibility = Visibility.Collapsed;
-                            
                             exibir(grid.material);
-                            //DGridOrçamento.DataContext = Database.selectDataTable("funcionarios");
-
                             break;
                         }
                     case 1:
                         {
                             orcabaState = 0;
                             //mudar conteudo datagrid para operarios
-
                             Storyboard sbr = FindResource("AbazinhaOrcr") as Storyboard;
                             sbr.Begin();
                             await Task.Delay(500);
-                            
                             exibir(grid.funcionario);
-
-                            
-
-                            //DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
                             break;
                         }
-
                 }
                 countAbazinhal++;
             }
@@ -373,41 +388,45 @@ namespace Container
 
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            
             Color colore = (Color)ColorConverter.ConvertFromString("#FFB2B2B2");
             plush.Fill = new SolidColorBrush(colore);
             plusv.Fill = new SolidColorBrush(colore);
             Color colorb = (Color)ColorConverter.ConvertFromString("#FF00B229");
             ElpseAddOrc.Stroke = new SolidColorBrush(Color.FromArgb(255, 0, 178, 41));
             DateTime theDate = DateTime.Now;
-            if (OrcTodosState == 0)//ír p orcamentos
+            if (OrcTodosState == 0)//orcamentos
             {
 
             }
-            else //ir p todos
+            else //todos
             {
-                switch (orcabaState)
+                if (countignore == 0)//funcionarios na primeira vez(bugz loco)
                 {
-                    case 1: // materiais
-                        {
 
-                            Database.insert("materiais", $"nome_produto = '{tatsar_Copy1.Text}', marca = '{tatsar_Copy.Text}', imposto = '{tatsar.Text}', preco = '{TxtRegistrarOrc.Text}'");
-                            exibir(grid.material);
-                            break;
-                        }
-                    case 0: // funcionarios
-                        {
-                            break;
-                        }
+                    countignore++;
+                    exibir(grid.funcionario);
                 }
+                else
+                {
+                     switch (orcabaState)
+                         {
+                         case 1: //materiais
+                             {
+
+                                exibir(grid.funcionario);
+                                break;
+                             }
+                         case 0: //funcionarios
+                             {
+
+                                exibir(grid.material);
+                                break;
+                             }
+                         }
+                }
+               
             }
-
-           // Database.insert("orcamento", "default," + "'" + TxtRegistrarOrc.Text + "'," + "'" + tatsar.Text + "'," + "'" + theDate.ToString("yyyy-MM-dd H:mm:ss") + "',NULL,NULL,NULL,NULL," + id);
-            //exibir(grid.orcamento);
-            //DGridOrçamento.DataContext = Database.selectDataTable("orcamento");
-
-
-
         }
 
 
@@ -473,14 +492,14 @@ namespace Container
         
         private async void RectAbaOrcT_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (OrcTodosState == 0)
+            if (OrcTodosState == 1)
             {
                 Storyboard sb = FindResource("IrPOrcamentos") as Storyboard;
                 sb.Begin();
                 await Task.Delay(500);
                 exibir(grid.orcamento);
                 //DGridOrçamento.DataContext = Database.selectDataTable("orcamento");
-                OrcTodosState = 1;
+                OrcTodosState = 0;
                 RectTrocaAba.IsHitTestVisible = false;
             }
             else
@@ -491,21 +510,21 @@ namespace Container
                 if(orcabaState == 0)
                 {
 
-                    exibir(grid.material);
-                       // DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
-
-                        
-                        //DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material");
-
                     
+                    // DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material", "materiais m join orcamento_materiais o on m.id=o.materiais_id", $"m.empresa_id='{this.id}'");
+
+
+                    //DGridOrçamento.DataContext = Database.selectDataTable("m.nome_produto, m.marca, o.unidades, m.preco, m.imposto, o.total_material");
+
+                    exibir(grid.funcionario);
                 }
                 else
                 {
 
                     //DGridOrçamento.DataContext = Database.selectDataTable("", "funcionarios ", $"empresa_id={this.id}");
-                    exibir(grid.funcionario);
+                    exibir(grid.material);
                 }
-                OrcTodosState = 0;
+                OrcTodosState = 1;
                 RectTrocaAba.IsHitTestVisible = true;
             }
         }
@@ -576,6 +595,12 @@ namespace Container
 
                     break;
                 case grid.funcionario:
+
+                    tatsar_Copy2.Text = "Nome";
+                    tatsar_Copy1.Text = "Profissão";
+                    tatsar_Copy.Text = "Preço/h";
+                    tatsar.Text = "Telefone";
+                    TxtRegistrarOrc.Text = "Cidade";
                     Database.insert("funcionarios", "");
                     break;
             }

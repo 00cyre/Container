@@ -2082,6 +2082,16 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Grid.RenderTransform>
+            <Grid HorizontalAlignment="Left" Height="631" Margin="996,0,0,0" VerticalAlignment="Top" Width="191" Background="#FF151517" Panel.ZIndex="-20" Grid.Column="1" Grid.RowSpan="2">
+                <Label x:Name="label5" Content="Bem vindo" HorizontalAlignment="Left" Margin="8,7,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Panel.ZIndex="-20"/>
+                <Label x:Name="LblProprietario" Content="&#xA;" HorizontalAlignment="Left" Margin="111,7,0,0" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="20" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Width="68" Background="{x:Null}" Panel.ZIndex="-20"/>
+                <Label x:Name="label6" Content="Tipo de Conta" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="8,44,0,0" Height="33" Width="101" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" Panel.ZIndex="-20"/>
+                <Label x:Name="LblTdeconta" Content="&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,44,0,0" Height="33" Width="73" Foreground="#FFFF6C0C" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" VerticalContentAlignment="Center" Panel.ZIndex="-20"/>
+                <Label x:Name="label6_Copy1" Content="Tempo restante" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,77,0,0" Height="33" Width="104" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" Panel.ZIndex="-20"/>
+                <Label x:Name="label6_Copy2" Content="Lifetime" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,77,0,0" Height="33" Width="60" Foreground="#FFFF6C0C" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Panel.ZIndex="-20"/>
+                <Label x:Name="label6_Copy3" Content="A.I Server" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,110,0,0" Height="33" Width="104" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" Panel.ZIndex="-20"/>
+                <Label x:Name="label6_Copy4" Content="Online" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,110,0,0" Height="33" Width="50" Foreground="#FF38FF0C" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Panel.ZIndex="-20"/>
+            </Grid>
             <Grid x:Name="ExpandGrid" Background="#001A1A1A" Panel.ZIndex="-10" MouseLeftButtonDown="ExpandGrid_MouseLeftButtonDown" UseLayoutRounding="False" IsHitTestVisible="True" MouseEnter="ExpandGrid_MouseEnter" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
                 <Grid.RenderTransform>
                     <TransformGroup>
@@ -2238,10 +2248,7 @@
                         <Rectangle x:Name="rectangle11" Fill="#FF262626" HorizontalAlignment="Left" Height="45" Margin="712,0,0,0" RadiusY="3" RadiusX="3" StrokeThickness="2" VerticalAlignment="Top" Width="142" Panel.ZIndex="-10" Stroke="White"/>
                         <Rectangle x:Name="rectangle13" Fill="White" HorizontalAlignment="Left" Height="2" Margin="848,43,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="8" Panel.ZIndex="-1"/>
                         <Rectangle x:Name="rectangle14" Fill="White" HorizontalAlignment="Left" Height="2" Margin="848,0,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="8" Panel.ZIndex="-1"/>
-                        <Grid HorizontalAlignment="Left" Height="45" Margin="242,0,0,0" VerticalAlignment="Top" Width="470">
-                            <Grid.Background>
-                                <SolidColorBrush/>
-                            </Grid.Background>
+                        <Grid HorizontalAlignment="Left" Height="45" Margin="242,0,0,0" VerticalAlignment="Top" Width="470" Background="#00000000">
                             <TextBox x:Name="tatsar_Copy" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="Marca" VerticalAlignment="Top" Width="142" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Background="Transparent" BorderBrush="{x:Null}" SelectionBrush="#FFFF6C0C" SelectionOpacity="0.5" FontSize="22" Margin="327,4,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
                                 <TextBox.Effect>
                                     <DropShadowEffect Direction="270" BlurRadius="0" ShadowDepth="1" Color="#FFCCCCCC"/>
@@ -2451,12 +2458,12 @@
                             </TransformGroup>
                         </Rectangle.RenderTransform>
                     </Rectangle>
-                    <Label x:Name="label3" Content="Dados:x" HorizontalAlignment="Left" Margin="127,42,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
-                    <Label x:Name="label4_Copy5" Content="Dados:y" HorizontalAlignment="Left" Margin="127,68,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
-                    <Label x:Name="label4_Copy6" Content="Dados:x" HorizontalAlignment="Left" Margin="184,42,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
-                    <Label x:Name="label4_Copy7" Content="Dados:y" HorizontalAlignment="Left" Margin="184,68,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
-                    <Label x:Name="label4_Copy8" Content="Dados:x" HorizontalAlignment="Left" Margin="241,42,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
-                    <Label x:Name="label4_Copy9" Content="Dados:y" HorizontalAlignment="Left" Margin="241,68,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
+                    <Label x:Name="label3" Content="" HorizontalAlignment="Left" Margin="127,42,0,0" VerticalAlignment="Top" Foreground="#FFF9A410" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                    <Label x:Name="label4_Copy5" Content="" HorizontalAlignment="Left" Margin="127,68,0,0" VerticalAlignment="Top" Foreground="#FFF9CF10" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                    <Label x:Name="label4_Copy6" Content="" HorizontalAlignment="Left" Margin="184,42,0,0" VerticalAlignment="Top" Foreground="#FFE4F910" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                    <Label x:Name="label4_Copy7" Content="" HorizontalAlignment="Left" Margin="184,68,0,0" VerticalAlignment="Top" Foreground="#FFAFF910" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                    <Label x:Name="label4_Copy8" Content="" HorizontalAlignment="Left" Margin="241,42,0,0" VerticalAlignment="Top" Foreground="#FF3AF910" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                    <Label x:Name="label4_Copy9" Content="" HorizontalAlignment="Left" Margin="241,68,0,0" VerticalAlignment="Top" Foreground="#FF10F99A" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
                     <Ellipse Fill="#FF262626" HorizontalAlignment="Left" Height="63" Margin="27,10,0,0" StrokeThickness="2.5" VerticalAlignment="Top" Width="63"/>
                     <Rectangle Fill="#FF262626" HorizontalAlignment="Left" Height="29" Margin="32,70,0,0" StrokeThickness="2.5" VerticalAlignment="Top" Width="27" RenderTransformOrigin="0.5,0.5">
                         <Rectangle.RenderTransform>
@@ -2495,12 +2502,12 @@
                             </TransformGroup>
                         </Rectangle.RenderTransform>
                     </Rectangle>
-                    <Label x:Name="label8" Content="Dados:x" HorizontalAlignment="Left" Margin="127,42,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
-                    <Label x:Name="label4_Copy10" Content="Dados:y" HorizontalAlignment="Left" Margin="127,68,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
-                    <Label x:Name="label4_Copy11" Content="Dados:x" HorizontalAlignment="Left" Margin="184,42,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
-                    <Label x:Name="label4_Copy12" Content="Dados:y" HorizontalAlignment="Left" Margin="184,68,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
-                    <Label x:Name="label4_Copy13" Content="Dados:x" HorizontalAlignment="Left" Margin="241,42,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
-                    <Label x:Name="label4_Copy14" Content="Dados:y" HorizontalAlignment="Left" Margin="241,68,0,0" VerticalAlignment="Top" Foreground="#FFF96C10"/>
+                    <Label x:Name="label8" Content="" HorizontalAlignment="Left" Margin="127,42,0,0" VerticalAlignment="Top" Foreground="#FFF9A410" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                    <Label x:Name="label4_Copy10" Content="" HorizontalAlignment="Left" Margin="127,68,0,0" VerticalAlignment="Top" Foreground="#FFF9CF10" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                    <Label x:Name="label4_Copy11" Content="" HorizontalAlignment="Left" Margin="184,42,0,0" VerticalAlignment="Top" Foreground="#FFE4F910" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                    <Label x:Name="label4_Copy12" Content="" HorizontalAlignment="Left" Margin="184,68,0,0" VerticalAlignment="Top" Foreground="#FFAFF910" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                    <Label x:Name="label4_Copy13" Content="" HorizontalAlignment="Left" Margin="241,42,0,0" VerticalAlignment="Top" Foreground="#FF3AF910" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                    <Label x:Name="label4_Copy14" Content="" HorizontalAlignment="Left" Margin="241,68,0,0" VerticalAlignment="Top" Foreground="#FF10F99A" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
                     <Rectangle Fill="#FF262626" HorizontalAlignment="Left" Height="12" Margin="21,44,0,0" StrokeThickness="2.5" VerticalAlignment="Top" Width="76" RenderTransformOrigin="0.5,0.5">
                         <Rectangle.RenderTransform>
                             <TransformGroup>
@@ -2532,66 +2539,54 @@
                         </Rectangle.RenderTransform>
                     </Rectangle>
                 </Grid>
-                <chartingToolkit:Chart Canvas.Top="80" DataContext="{Binding}" Canvas.Left="10" Name="Chartz1" 
+                <chartingToolkit:Chart Canvas.Top="80" DataContext="{Binding}" Canvas.Left="10" x:Name="Chartz1" 
            Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Margin="0,0,658,117">
 
                     <chartingToolkit:Chart.LegendStyle>
-                        <Style TargetType="datavis:Legend">
+                        <Style TargetType="{x:Type datavis:Legend}">
                             <Setter Property="Width" Value="0" />
                         </Style>
 
                     </chartingToolkit:Chart.LegendStyle>
 
                     <chartingToolkit:Chart.ChartAreaStyle>
-                        <Style TargetType="chartingPrimitives:EdgePanel">
-
-                        </Style>
+                        <Style TargetType="{x:Type chartingPrimitives:EdgePanel}"/>
                     </chartingToolkit:Chart.ChartAreaStyle>
 
 
                     <chartingToolkit:Chart.PlotAreaStyle>
 
-                        <Style TargetType="Grid">
+                        <Style TargetType="{x:Type Grid}">
                             <Setter Property="Background" Value="Transparent" />
                         </Style>
                     </chartingToolkit:Chart.PlotAreaStyle>
 
-                    <chartingToolkit:Chart.Series>
-
-                        <chartingToolkit:PieSeries  BorderBrush="Transparent" DataContext="{Binding}" IndependentValueBinding="{Binding Path=Key}"  DependentValueBinding="{Binding Path=Value}">
-                        </chartingToolkit:PieSeries>
-                    </chartingToolkit:Chart.Series>
+                    <chartingToolkit:PieSeries  BorderBrush="Transparent" DataContext="{Binding}" IndependentValueBinding="{Binding Key}"  DependentValueBinding="{Binding Value}"/>
                 </chartingToolkit:Chart>
 
-                <chartingToolkit:Chart Canvas.Top="80" Canvas.Left="10" Name="Chartz2" 
+                <chartingToolkit:Chart Canvas.Top="80" Canvas.Left="10" x:Name="Chartz2" 
            Background="Transparent" BorderBrush="Transparent" BorderThickness="0" DataContext="{Binding}" Margin="328,-1,328,118">
 
                     <chartingToolkit:Chart.LegendStyle>
-                        <Style TargetType="datavis:Legend">
+                        <Style TargetType="{x:Type datavis:Legend}">
                             <Setter Property="Width" Value="0" />
                         </Style>
 
                     </chartingToolkit:Chart.LegendStyle>
 
                     <chartingToolkit:Chart.ChartAreaStyle>
-                        <Style TargetType="chartingPrimitives:EdgePanel">
-
-                        </Style>
+                        <Style TargetType="{x:Type chartingPrimitives:EdgePanel}"/>
                     </chartingToolkit:Chart.ChartAreaStyle>
 
 
                     <chartingToolkit:Chart.PlotAreaStyle>
 
-                        <Style TargetType="Grid">
+                        <Style TargetType="{x:Type Grid}">
                             <Setter Property="Background" Value="Transparent" />
                         </Style>
                     </chartingToolkit:Chart.PlotAreaStyle>
 
-                    <chartingToolkit:Chart.Series>
-
-                        <chartingToolkit:PieSeries  BorderBrush="Transparent" DataContext="{Binding}" IndependentValueBinding="{Binding Path=Key}"  DependentValueBinding="{Binding Path=Value}">
-                        </chartingToolkit:PieSeries>
-                    </chartingToolkit:Chart.Series>
+                    <chartingToolkit:PieSeries  BorderBrush="Transparent" DataContext="{Binding}" IndependentValueBinding="{Binding Key}"  DependentValueBinding="{Binding Value}"/>
                 </chartingToolkit:Chart>
                 <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="20" Margin="0,37,0,0" VerticalAlignment="Top" Width="328"/>
                 <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="435" Margin="7,47,0,0" VerticalAlignment="Top" Width="7"/>
@@ -2629,16 +2624,6 @@
                 <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="435" Margin="670,37,0,0" VerticalAlignment="Top" Width="7"/>
                 <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="435" Margin="643,47,0,0" VerticalAlignment="Top" Width="7"/>
                 <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="10" Margin="670,472,0,0" VerticalAlignment="Top" Width="306"/>
-            </Grid>
-            <Grid HorizontalAlignment="Left" Height="631" Margin="997,10,0,-10" VerticalAlignment="Top" Width="191" Background="#FF151517" Panel.ZIndex="11" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2">
-                <Label x:Name="label5" Content="Bem vindo" HorizontalAlignment="Left" Margin="8,7,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Panel.ZIndex="-9"/>
-                <Label x:Name="LblProprietario" Content="&#xA;" HorizontalAlignment="Left" Margin="111,7,0,0" VerticalAlignment="Top" Foreground="#FFFF6C0C" FontSize="20" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" Width="68" Background="{x:Null}" Panel.ZIndex="-9"/>
-                <Label x:Name="label6" Content="Tipo de Conta" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="8,44,0,0" Height="33" Width="101" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" Panel.ZIndex="-9"/>
-                <Label x:Name="LblTdeconta" Content="&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,44,0,0" Height="33" Width="73" Foreground="#FFFF6C0C" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" VerticalContentAlignment="Center" Panel.ZIndex="-9"/>
-                <Label x:Name="label6_Copy1" Content="Tempo restante" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,77,0,0" Height="33" Width="104" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" Panel.ZIndex="-9"/>
-                <Label x:Name="label6_Copy2" Content="Lifetime" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,77,0,0" Height="33" Width="60" Foreground="#FFFF6C0C" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Panel.ZIndex="-9"/>
-                <Label x:Name="label6_Copy3" Content="A.I Server" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,110,0,0" Height="33" Width="104" Foreground="White" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" Panel.ZIndex="-9"/>
-                <Label x:Name="label6_Copy4" Content="Online" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,110,0,0" Height="33" Width="50" Foreground="#FF38FF0C" FontFamily="/Container;component/Font/Nunito/#Nunito ExtraLight" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Panel.ZIndex="-9"/>
             </Grid>
         </Grid>
     </Grid>
