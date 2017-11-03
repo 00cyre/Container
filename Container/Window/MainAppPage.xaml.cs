@@ -58,7 +58,14 @@ namespace Container
             {
                 while (read.Read())
                 {
-                    valueList.Add(new KeyValuePair<string, double>(Convert.ToString(read["nome_orcamento"]), Convert.ToDouble(read["total"])));
+                    try
+                    {
+                        valueList.Add(new KeyValuePair<string, double>(Convert.ToString(read["nome_orcamento"]), Convert.ToDouble(read["total"])));
+                    }
+                    catch
+                    {
+
+                    }
                 }
             }
             Database.conexao.Close();
@@ -397,7 +404,7 @@ namespace Container
             DateTime theDate = DateTime.Now;
             if (OrcTodosState == 0)//orcamentos
             {
-
+                inserir(grid.orcamento);
             }
             else //todos
             {
@@ -413,14 +420,14 @@ namespace Container
                          {
                          case 1: //materiais
                              {
-
-                                exibir(grid.funcionario);
+                                inserir(grid.material);
+                                exibir(grid.material);
                                 break;
                              }
                          case 0: //funcionarios
                              {
-
-                                exibir(grid.material);
+                                inserir(grid.funcionario);
+                                exibir(grid.funcionario);
                                 break;
                              }
                          }
@@ -576,7 +583,7 @@ namespace Container
             switch (Grid)
             {
                 case grid.orcamento:
-                    Database.insert("orcamento", $"default, '{tatsar.Text}', '{TxtRegistrarOrc.Text}', {DateTime.Now.ToString("yyyy-MM-dd")}, null, null, null, null, {id}");
+                    Database.insert("orcamento", $"default, '{tatsar.Text}', '{TxtRegistrarOrc.Text}', '{DateTime.Now.ToString("yyyy-MM-dd")}', null, null, null, null, {id}");
                     break;
                 case grid.orcamento_func:
                     Database.insert("orcamento_funcionarios", "");
@@ -589,7 +596,6 @@ namespace Container
                     tatsar_Copy.Text = "Marca";
                     tatsar.Text = "Imposto";
                     TxtRegistrarOrc.Text = "Preço";
-                    Database.insert("materiais", $"default, '{tatsar_Copy.Text}', '{tatsar.Text}', null, '{TxtRegistrarOrc.Text}', null, {id}");
 
                     Database.insert("materiais", $"default, '{tatsar_Copy1.Text}', '{TxtRegistrarOrc.Text}', {tatsar.Text}, '{tatsar_Copy.Text}', null, {id}");
 
@@ -604,6 +610,8 @@ namespace Container
                     Database.insert("funcionarios", "");
                     break;
             }
+
+            criarGrafico();
         }
 
         enum grid
