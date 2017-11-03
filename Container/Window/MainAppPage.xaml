@@ -3058,7 +3058,7 @@
                         <chartingToolkit:PieSeries.StylePalette>
                             <datavis:StylePalette>
                                 <Style TargetType="chartingToolkit:PieDataPoint">
-                                    <EventSetter Event="MouseDown" Handler=""/>
+
                                     <Setter Property="Background" Value="#FFF9A410"/>
                                     <Setter Property="BorderBrush" Value="#FF959599"/>
                                 </Style>
