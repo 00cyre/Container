@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Windows.Controls.DataVisualization.Charting;
 using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace Container
 {
@@ -25,7 +26,6 @@ namespace Container
         
     public partial class MainAppPage
     {
-        int countignore = 0;
         string login = MainWindow.nome;
         int id { get; set; }
         int ExpanderCodeState = 0, OrcTodosState = 1, orcabaState = 0, countAbazinhal = 0; //depois temos que definir os codigos de stado
@@ -51,7 +51,7 @@ namespace Container
             private void criarGrafico()
         {
             List<KeyValuePair<string, double>> valueList = new List<KeyValuePair<string, double>>();
-
+            List<PieDataPoint> Colorz = new List<PieDataPoint>();
             Database.conexao.Open();
             MySqlCommand cmd = new MySqlCommand("SELECT * FROM orcamento ORDER BY total DESC LIMIT 6", Database.conexao);
             using (var read = cmd.ExecuteReader())
@@ -383,48 +383,7 @@ namespace Container
 
         }
 
-        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            
-            Color colore = (Color)ColorConverter.ConvertFromString("#FFB2B2B2");
-            plush.Fill = new SolidColorBrush(colore);
-            plusv.Fill = new SolidColorBrush(colore);
-            Color colorb = (Color)ColorConverter.ConvertFromString("#FF00B229");
-            ElpseAddOrc.Stroke = new SolidColorBrush(Color.FromArgb(255, 0, 178, 41));
-            DateTime theDate = DateTime.Now;
-            if (OrcTodosState == 0)//orcamentos
-            {
-                inserir(grid.orcamento);
-            }
-            else //todos
-            {
-                if (countignore == 0)//funcionarios na primeira vez(bugz loco)
-                {
-
-                    countignore = 1;
-                    exibir(grid.funcionario);
-                }
-                else
-                {
-                     switch (orcabaState)
-                         {
-                         case 1: //materiais
-                             {
-                                inserir(grid.material);
-                                exibir(grid.material);
-                                break;
-                             }
-                         case 0: //funcionarios
-                             {
-                                inserir(grid.funcionario);
-                                exibir(grid.funcionario);
-                                break;
-                             }
-                         }
-                }
-               
-            }
-        }
+        
 
 
         private void RegistrarFunc_MouseEnter(object sender, MouseEventArgs e)
@@ -566,23 +525,64 @@ namespace Container
                 case grid.funcionario:
                     DGridOrçamento.MinColumnWidth = 230;
                     tatsar_Copy2.Text = "Nome";
-                    tatsar_Copy1.Text = "Profissão";
-                    tatsar_Copy.Text = "Preço/H";
-                    tatsar.Text = "Telefone";
-                    TxtRegistrarOrc.Text = "Cidade";
+                    tatsar_Copy1.Text = "Cpf";
+                    tatsar_Copy.Text = "Profissão";
+                    tatsar.Text = "Preço/h";
+                    TxtRegistrarOrc.Text = "Telefone";
                     data = Database.selectDataTable("nome, especialidade, preco_hora, telefone, cidade", "funcionarios", $"empresa_id='{this.id}'");
                     break;
             }
             DGridOrçamento.DataContext = data;
         }
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
 
+            Color colore = (Color)ColorConverter.ConvertFromString("#FFB2B2B2");
+            plush.Fill = new SolidColorBrush(colore);
+            plusv.Fill = new SolidColorBrush(colore);
+            Color colorb = (Color)ColorConverter.ConvertFromString("#FF00B229");
+            ElpseAddOrc.Stroke = new SolidColorBrush(Color.FromArgb(255, 0, 178, 41));
+            DateTime theDate = DateTime.Now;
+            if (OrcTodosState == 1)//orcamentos
+            {
+                inserir(grid.orcamento);
+                exibir(grid.orcamento);
+                criarGrafico();
+            }
+            else //todos
+            {switch (orcabaState){
+                        case 1: //materiais
+                            {
+                            inserir(grid.funcionario);
+                            exibir(grid.funcionario);
+                            break;
+                        }
+                        case 0: //funcionarios
+                            {
+                            inserir(grid.material);
+                            exibir(grid.material);
+                            break;
+                            
+                            }}}}
         private void inserir(grid Grid)
         {
             switch (Grid)
             {
                 case grid.orcamento:
-                    Database.insert("orcamento", $"default, '{tatsar.Text}', '{TxtRegistrarOrc.Text}', '{DateTime.Now.ToString("yyyy-MM-dd")}', null, null, null, null, {id}");
-                    break;
+                    {
+                        if (tatsar.Text != string.Empty && Regex.IsMatch(tatsar.Text, @"^[0-9]+$") == true)
+                        {
+                            if (TxtRegistrarOrc.Text != string.Empty && Regex.IsMatch(TxtRegistrarOrc.Text, @"^[0-9]+$") == true)
+                            {
+                                Database.insert("orcamento", $"default, '{tatsar_Copy.Text}', '{tatsar.Text}', '{DateTime.Now.ToString("yyyy-MM-dd")}', '{TxtRegistrarOrc.Text}', null, null, null, {id}");
+                            }
+                            else
+                            {
+                                MessageBox.Show("O campo de texto Total não aceita letras por favor insira um valor numerico valido");
+                            }
+                        } else { MessageBox.Show("O campo de texto Area não aceita letras por favor insira um valor numerico valido"); }
+                        break;
+                    }
                 case grid.orcamento_func:
                     Database.insert("orcamento_funcionarios", "");
                     break;
@@ -590,22 +590,42 @@ namespace Container
                     Database.insert("orcamento_materiais", "");
                     break;
                 case grid.material:
-                    tatsar_Copy1.Text = "Nome";
-                    tatsar_Copy.Text = "Marca";
-                    tatsar.Text = "Imposto";
-                    TxtRegistrarOrc.Text = "Preço";
 
-                    Database.insert("materiais", $"default, '{tatsar_Copy1.Text}', '{TxtRegistrarOrc.Text}', {tatsar.Text}, '{tatsar_Copy.Text}', null, {id}");
+                    if (tatsar.Text != string.Empty && Regex.IsMatch(tatsar.Text, @"^[0-9]+$") == true)
+                    {
+                        if (TxtRegistrarOrc.Text != string.Empty && Regex.IsMatch(TxtRegistrarOrc.Text, @"^[0-9]+$") == true)
+                        {
+                            Database.insert("materiais", $"default, '{tatsar_Copy1.Text}', '{TxtRegistrarOrc.Text}', {tatsar.Text}, '{tatsar_Copy.Text}', null, {id}");
+                        }
+                        else
+                        {
+                            MessageBox.Show("O campo de texto Preço não aceita letras por favor insira um valor numerico valido");
+                        }
+                    }
+                    else { MessageBox.Show("O campo de texto Imposto não aceita letras por favor insira um valor numerico valido"); }
 
                     break;
                 case grid.funcionario:
 
-                    tatsar_Copy2.Text = "Nome";
-                    tatsar_Copy1.Text = "Profissão";
-                    tatsar_Copy.Text = "Preço/h";
-                    tatsar.Text = "Telefone";
-                    TxtRegistrarOrc.Text = "Cidade";
-                    Database.insert("funcionarios", "");
+                    if (tatsar.Text != string.Empty && Regex.IsMatch(tatsar.Text, @"^[0-9]+$") == true)
+                    {
+                        if (tatsar_Copy1.Text != string.Empty && Regex.IsMatch(tatsar_Copy1.Text, @"^[0-9]+$") == true)
+                        {
+                            if (TxtRegistrarOrc.Text != string.Empty && Regex.IsMatch(TxtRegistrarOrc.Text, @"^[0-9]+$") == true)
+                            {
+                                Database.insert("funcionarios", $"default, '{tatsar_Copy1.Text}', '{tatsar_Copy2.Text}','{TxtRegistrarOrc.Text}', null, null, '{tatsar.Text}', '{tatsar_Copy.Text}',null, '{id}'");
+                            }
+                            else
+                            {
+                                MessageBox.Show("O campo de texto Telefone não aceita letras...");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("O campo de texto Total não aceita letras...");
+                        }
+                    }
+                    else { MessageBox.Show("O campo de texto Preço/H não aceita letras por favor insira um valor numerico valido"); }
                     break;
             }
 

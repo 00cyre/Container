@@ -2820,30 +2820,8 @@
             </Grid>
             <Grid/>
             <Grid Grid.Column="1" HorizontalAlignment="Left" Height="621" Margin="10,10,0,0" VerticalAlignment="Top" Width="986" Background="#00000000" Grid.RowSpan="2">
-                <Grid HorizontalAlignment="Left" Height="112" Margin="0,509,0,0" VerticalAlignment="Top" Width="328" Background="#FF18181A">
-                    <Rectangle HorizontalAlignment="Left" Height="92" StrokeThickness="2.5" VerticalAlignment="Top" Width="97" Fill="#FF343438" Margin="10,10,0,0"/>
-                    <Rectangle Fill="#FF2E2E2E" HorizontalAlignment="Left" Height="92" Margin="112,10,0,0" StrokeThickness="2.5" VerticalAlignment="Top" Width="205"/>
-                    <Label x:Name="label" Content="Analise de orçamento" HorizontalAlignment="Left" Margin="112,10,0,0" VerticalAlignment="Top" Height="32" Width="205" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-                    <Rectangle Fill="#FF252528" HorizontalAlignment="Left" Height="60" Margin="112,42,0,0" StrokeThickness="2.5" VerticalAlignment="Top" Width="205" RenderTransformOrigin="0.5,0.5">
-                        <Rectangle.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform AngleX="-0.562"/>
-                                <RotateTransform/>
-                                <TranslateTransform X="-0.49"/>
-                            </TransformGroup>
-                        </Rectangle.RenderTransform>
-                    </Rectangle>
-                    <Label x:Name="label4" Content="" HorizontalAlignment="Left" Margin="127,42,0,0" VerticalAlignment="Top" Foreground="#FFF9A410" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
-                    <Label x:Name="label4_Copy" Content="" HorizontalAlignment="Left" Margin="127,68,0,0" VerticalAlignment="Top" Foreground="#FFF9CF10" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
-                    <Label x:Name="label4_Copy1" Content="" HorizontalAlignment="Left" Margin="184,42,0,0" VerticalAlignment="Top" Foreground="#FFE4F910" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
-                    <Label x:Name="label4_Copy2" Content="" HorizontalAlignment="Left" Margin="184,68,0,0" VerticalAlignment="Top" Foreground="#FFAFF910" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
-                    <Label x:Name="label4_Copy3" Content="" HorizontalAlignment="Left" Margin="241,42,0,0" VerticalAlignment="Top" Foreground="#FF3AF910" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
-                    <Label x:Name="label4_Copy4" Content="" HorizontalAlignment="Left" Margin="241,68,0,0" VerticalAlignment="Top" Foreground="#FF10F99A" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
-                    <Label Content="$" HorizontalAlignment="Left" VerticalAlignment="Top" Height="112" Width="107" Foreground="#FF242426" FontSize="72" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="/Container;component/Font/NTR/#NTR" Margin="5,-18,0,0"/>
-                </Grid>
-                <Grid HorizontalAlignment="Left" Height="112" Margin="328,509,0,0" VerticalAlignment="Top" Width="330" Background="#FF18181A">
-                    <Rectangle HorizontalAlignment="Left" Height="92" StrokeThickness="2.5" VerticalAlignment="Top" Width="97" Fill="#FF343438" Margin="10,10,0,0"/>
+                <Grid HorizontalAlignment="Left" Height="112" Margin="323,509,0,0" VerticalAlignment="Top" Width="330" Background="#FF18181A">
+                    <Rectangle HorizontalAlignment="Left" Height="92" StrokeThickness="2.5" VerticalAlignment="Top" Width="97" Fill="#FF959599" Margin="10,10,0,0"/>
                     <Rectangle Fill="#FF333333" HorizontalAlignment="Left" Height="92" Margin="112,10,0,0" StrokeThickness="2.5" VerticalAlignment="Top" Width="205"/>
                     <Label x:Name="label2" Content="Analise de funcionario" HorizontalAlignment="Left" Margin="112,10,0,0" VerticalAlignment="Top" Height="32" Width="205" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
                     <Rectangle Fill="#FF252528" HorizontalAlignment="Left" Height="60" Margin="112,42,0,0" StrokeThickness="2.5" VerticalAlignment="Top" Width="205" RenderTransformOrigin="0.5,0.5">
@@ -2887,7 +2865,7 @@
                 </Grid>
 
                 <Grid HorizontalAlignment="Left" Height="112" Margin="658,509,0,0" VerticalAlignment="Top" Width="328" Background="#FF18181A">
-                    <Rectangle HorizontalAlignment="Left" Height="92" StrokeThickness="2.5" VerticalAlignment="Top" Width="97" Fill="#FF343438" Margin="10,10,0,0"/>
+                    <Rectangle HorizontalAlignment="Left" Height="92" StrokeThickness="2.5" VerticalAlignment="Top" Width="97" Fill="#FF959599" Margin="10,10,0,0"/>
                     <Rectangle Fill="#FF2E2E2E" HorizontalAlignment="Left" Height="92" Margin="112,10,0,0" StrokeThickness="2.5" VerticalAlignment="Top" Width="205"/>
                     <Label x:Name="label7" Content="Analise de materiais" HorizontalAlignment="Left" Margin="112,10,0,0" VerticalAlignment="Top" Height="32" Width="205" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
                     <Rectangle Fill="#FF252528" HorizontalAlignment="Left" Height="60" Margin="112,42,0,0" StrokeThickness="2.5" VerticalAlignment="Top" Width="205" RenderTransformOrigin="0.5,0.5">
@@ -2959,7 +2937,39 @@
                         </Style>
                     </chartingToolkit:Chart.PlotAreaStyle>
 
-                    <chartingToolkit:PieSeries  BorderBrush="Transparent" DataContext="{Binding}" IndependentValueBinding="{Binding Key}"  DependentValueBinding="{Binding Value}"/>
+                    <chartingToolkit:PieSeries  BorderBrush="Transparent" DataContext="{Binding}" IndependentValueBinding="{Binding Key}"  DependentValueBinding="{Binding Value}" Width="288" Height="414">
+                        <chartingToolkit:PieSeries.Effect>
+                            <DropShadowEffect Color="#FF343438" BlurRadius="0" Direction="270" ShadowDepth="3"/>
+                        </chartingToolkit:PieSeries.Effect>
+                        <chartingToolkit:PieSeries.StylePalette>
+                            <datavis:StylePalette>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <Setter Property="Background" Value="#FFF9A410"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <Setter Property="Background" Value="#FFF9CF10"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <Setter Property="Background" Value="#FFE4F910"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <Setter Property="Background" Value="#FFAFF910"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <Setter Property="Background" Value="#FF3AF910"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <Setter Property="Background" Value="#FF10F99A"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+                            </datavis:StylePalette>
+                        </chartingToolkit:PieSeries.StylePalette>
+                    </chartingToolkit:PieSeries>
                 </chartingToolkit:Chart>
 
                 <chartingToolkit:Chart Canvas.Top="80" Canvas.Left="10" x:Name="Chartz2" 
@@ -2984,7 +2994,36 @@
                         </Style>
                     </chartingToolkit:Chart.PlotAreaStyle>
 
-                    <chartingToolkit:PieSeries  BorderBrush="Transparent" DataContext="{Binding}" IndependentValueBinding="{Binding Key}"  DependentValueBinding="{Binding Value}"/>
+                    <chartingToolkit:PieSeries  BorderBrush="Transparent" DataContext="{Binding}" IndependentValueBinding="{Binding Key}"  DependentValueBinding="{Binding Value}">
+                        <chartingToolkit:PieSeries.StylePalette>
+                            <datavis:StylePalette>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <Setter Property="Background" Value="#FFF9A410"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <Setter Property="Background" Value="#FFF9CF10"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <Setter Property="Background" Value="#FFE4F910"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <Setter Property="Background" Value="#FFAFF910"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <Setter Property="Background" Value="#FF3AF910"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <Setter Property="Background" Value="#FF10F99A"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+                            </datavis:StylePalette>
+                        </chartingToolkit:PieSeries.StylePalette>
+                    </chartingToolkit:PieSeries>
                 </chartingToolkit:Chart>
                 <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="20" Margin="0,37,0,0" VerticalAlignment="Top" Width="328"/>
                 <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="435" Margin="7,47,0,0" VerticalAlignment="Top" Width="7"/>
@@ -3015,13 +3054,66 @@
                         </Style>
                     </chartingToolkit:Chart.PlotAreaStyle>
 
-                    <chartingToolkit:PieSeries  DataContext="{Binding}" BorderBrush="Transparent" IndependentValueBinding="{Binding Key}"  DependentValueBinding="{Binding Value}"/>
+                    <chartingToolkit:PieSeries DataContext="{Binding}"  BorderBrush="Transparent" IndependentValueBinding="{Binding Key}"  DependentValueBinding="{Binding Value}">
+                        <chartingToolkit:PieSeries.StylePalette>
+                            <datavis:StylePalette>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <EventSetter Event="MouseDown" Handler=""/>
+                                    <Setter Property="Background" Value="#FFF9A410"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <Setter Property="Background" Value="#FFF9CF10"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <Setter Property="Background" Value="#FFE4F910"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <Setter Property="Background" Value="#FFAFF910"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <Setter Property="Background" Value="#FF3AF910"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+                                <Style TargetType="chartingToolkit:PieDataPoint">
+                                    <Setter Property="Background" Value="#FF10F99A"/>
+                                    <Setter Property="BorderBrush" Value="#FF959599"/>
+                                </Style>
+
+                            </datavis:StylePalette>
+                        </chartingToolkit:PieSeries.StylePalette>
+                    </chartingToolkit:PieSeries>
                 </chartingToolkit:Chart>
                 <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="435" Margin="969,47,0,0" VerticalAlignment="Top" Width="7"/>
                 <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="20" Margin="670,27,0,0" VerticalAlignment="Top" Width="306"/>
                 <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="435" Margin="670,37,0,0" VerticalAlignment="Top" Width="7"/>
                 <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="435" Margin="643,47,0,0" VerticalAlignment="Top" Width="7"/>
                 <Rectangle Fill="#FF0E0E0F" HorizontalAlignment="Left" Height="10" Margin="670,472,0,0" VerticalAlignment="Top" Width="306"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="112" Margin="0,203,0,0" VerticalAlignment="Top" Width="328" Background="#FF18181A" Grid.Column="1" Grid.Row="1">
+                <Rectangle HorizontalAlignment="Left" Height="92" StrokeThickness="2.5" VerticalAlignment="Top" Width="97" Fill="#FF959599" Margin="10,10,0,0"/>
+                <Rectangle Fill="#FF2E2E2E" HorizontalAlignment="Left" Height="92" Margin="112,10,0,0" StrokeThickness="2.5" VerticalAlignment="Top" Width="205"/>
+                <Label x:Name="label" Content="Analise de orçamento" HorizontalAlignment="Left" Margin="112,10,0,0" VerticalAlignment="Top" Height="32" Width="205" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Rectangle Fill="#FF252528" HorizontalAlignment="Left" Height="60" Margin="112,42,0,0" StrokeThickness="2.5" VerticalAlignment="Top" Width="205" RenderTransformOrigin="0.5,0.5">
+                    <Rectangle.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="-0.562"/>
+                            <RotateTransform/>
+                            <TranslateTransform X="-0.49"/>
+                        </TransformGroup>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Label x:Name="label4" Content="" HorizontalAlignment="Left" Margin="127,42,0,0" VerticalAlignment="Top" Foreground="#FFF9A410" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                <Label x:Name="label4_Copy" Content="" HorizontalAlignment="Left" Margin="127,68,0,0" VerticalAlignment="Top" Foreground="#FFF9CF10" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                <Label x:Name="label4_Copy1" Content="" HorizontalAlignment="Left" Margin="184,42,0,0" VerticalAlignment="Top" Foreground="#FFE4F910" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                <Label x:Name="label4_Copy2" Content="" HorizontalAlignment="Left" Margin="184,68,0,0" VerticalAlignment="Top" Foreground="#FFAFF910" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                <Label x:Name="label4_Copy3" Content="" HorizontalAlignment="Left" Margin="241,42,0,0" VerticalAlignment="Top" Foreground="#FF3AF910" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                <Label x:Name="label4_Copy4" Content="" HorizontalAlignment="Left" Margin="241,68,0,0" VerticalAlignment="Top" Foreground="#FF10F99A" Width="52" Height="26" MaxWidth="52" MaxHeight="26"/>
+                <Label Content="$" HorizontalAlignment="Left" VerticalAlignment="Top" Height="112" Width="107" Foreground="#FF242426" FontSize="72" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="/Container;component/Font/NTR/#NTR" Margin="5,-18,0,0"/>
             </Grid>
         </Grid>
     </Grid>
