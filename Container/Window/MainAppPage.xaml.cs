@@ -126,7 +126,7 @@ namespace Container
             ((PieSeries)Chartz3.Series[0]).ItemsSource = valueList3;
             try
             {
-                label8.Content = valueList[0].Key;
+                label8.Content = valueList3[0].Key;
                 label4_Copy10.Content = valueList3[1].Key;
                 label4_Copy11.Content = valueList3[2].Key;
                 label4_Copy12.Content = valueList3[3].Key;
